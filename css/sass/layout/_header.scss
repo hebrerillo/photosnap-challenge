@@ -13,18 +13,32 @@
             display: none;
         }
     }
-    
+
     .header__nav {
         position: fixed;
         top: var(--header-height);
         left: 0;
         width: 100vw;
         height: calc(100vh - var(--header-height));
-
-        ul {
-            display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
+        .nav-invite--container {
+            @include flex-vcenter;
             flex-direction: column;
-            row-gap: 2rem;
+            background-color: var(--white);
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+                text-align: center;
+                li {
+                    a {
+                        font-size: 1.5rem;
+                        letter-spacing: 2.5px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+            }
         }
     }
 }
