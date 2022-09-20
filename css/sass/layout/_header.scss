@@ -1,0 +1,16 @@
+.main-header {
+    @include flex-vcenter-hevently;
+    height: 7.2rem;
+    padding: 0 2.5rem;
+
+    .logo {
+        width: 17rem;
+        height: 1.6rem;
+    }
+
+    .header__nav {
+        .close-menu {
+            display: none;
+        }
+    }
+}

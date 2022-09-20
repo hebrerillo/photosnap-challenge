@@ -7,8 +7,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 50%;
-  /*1 rem = 8px;*/ }
+  font-size: 62.5%;
+  /*1 rem = 10px;*/ }
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -40,12 +40,25 @@ button {
 
 .main-container {
   min-height: 100vh;
-  position: relative;
   margin: 0 auto; }
 
-@media only screen and (min-width: 90em) {
-  html {
-    font-size: 62.5%;
-    /*1 rem = 10px;*/ } }
+/**
+ * A flex container with elements that are vertically centered and
+ * horizontally spaced between
+ */
+/**
+ * A flex container with elements that are vertically centered.
+ */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.2rem;
+  padding: 0 2.5rem; }
+  .main-header .logo {
+    width: 17rem;
+    height: 1.6rem; }
+  .main-header .header__nav .close-menu {
+    display: none; }
 
 /*# sourceMappingURL=styles.css.map */

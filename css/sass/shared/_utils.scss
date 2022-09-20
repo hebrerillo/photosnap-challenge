@@ -1,0 +1,17 @@
+/**
+ * A flex container with elements that are vertically centered and
+ * horizontally spaced between
+ */
+@mixin flex-vcenter-hevently {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**
+ * A flex container with elements that are vertically centered.
+ */
+@mixin flex-vcenter {
+    display: flex;
+    align-items: center;
+}
