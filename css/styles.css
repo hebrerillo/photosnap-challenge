@@ -91,12 +91,12 @@ button {
     height: calc(100vh - var(--header-height));
     background-color: rgba(0, 0, 0, 0.5); }
     .main-header .header__nav .nav-invite--container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: minmax(auto, 31rem);
+      justify-content: center;
       row-gap: 2rem;
       background-color: var(--white);
-      padding: 4rem 0; }
+      padding: 4rem 1rem; }
       .main-header .header__nav .nav-invite--container ul {
         display: flex;
         flex-direction: column;
@@ -111,7 +111,6 @@ button {
       .main-header .header__nav .nav-invite--container .button--1 {
         height: 4.8rem; }
       .main-header .header__nav .nav-invite--container ul, .main-header .header__nav .nav-invite--container .button--1 {
-        width: 31rem;
         font-size: 1.5rem; }
 
 /*# sourceMappingURL=styles.css.map */

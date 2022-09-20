@@ -22,12 +22,12 @@
         height: calc(100vh - var(--header-height));
         background-color: rgba(0, 0, 0, 0.5);
         .nav-invite--container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: grid;
+            grid-template-columns: minmax(auto, 31rem);
+            justify-content: center;
             row-gap: 2rem;
             background-color: var(--white);
-            padding: 4rem 0;
+            padding: 4rem 1rem;
 
             ul {
                 display: flex;
@@ -50,7 +50,6 @@
             }
             
             ul, .button--1 {
-                width: 31rem;
                 font-size: 1.5rem;
             }
         }
