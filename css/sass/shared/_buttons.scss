@@ -1,0 +1,20 @@
+.button {
+    @include flex-vcenter-hcenter;
+    height: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button--1 {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.button--1:hover {
+    background-color: var(--light-grey);
+    color: var(--black);
+}
+
+.link:hover {
+    opacity: 0.3;
+}

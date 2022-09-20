@@ -22,22 +22,36 @@
         height: calc(100vh - var(--header-height));
         background-color: rgba(0, 0, 0, 0.5);
         .nav-invite--container {
-            @include flex-vcenter;
+            display: flex;
             flex-direction: column;
+            align-items: center;
+            row-gap: 2rem;
             background-color: var(--white);
+            padding: 4rem 0;
+
             ul {
                 display: flex;
                 flex-direction: column;
-                row-gap: 2rem;
+                row-gap: 2.5rem;
                 text-align: center;
+                padding-bottom: 2rem;
+                border-bottom: 1px solid var(--light-grey);
                 li {
                     a {
-                        font-size: 1.5rem;
                         letter-spacing: 2.5px;
                         font-weight: 700;
                         text-transform: uppercase;
                     }
                 }
+            }
+            
+            .button--1 {
+                height: 4.8rem;
+            }
+            
+            ul, .button--1 {
+                width: 31rem;
+                font-size: 1.5rem;
             }
         }
     }

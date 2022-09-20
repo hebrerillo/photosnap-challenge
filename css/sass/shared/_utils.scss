@@ -1,4 +1,13 @@
 /**
+ * A flex container with elements that are both horizontally and vertically centered.
+ */
+@mixin flex-vcenter-hcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**
  * A flex container with elements that are vertically centered and
  * horizontally spaced between
  */
