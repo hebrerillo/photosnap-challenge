@@ -1,6 +1,6 @@
 .main-header {
     @include flex-vcenter-hevently;
-    height: 7.2rem;
+    height: var(--header-height);
     padding: 0 2.5rem;
 
     .logo {
@@ -8,9 +8,23 @@
         height: 1.6rem;
     }
 
-    .header__nav {
+    .showhide-buttons {
         .close-menu {
             display: none;
+        }
+    }
+    
+    .header__nav {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - var(--header-height));
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
         }
     }
 }
