@@ -60,6 +60,7 @@ button {
   padding: 0 3rem; }
   .white-box .text-box-content, .black-box .text-box-content {
     display: grid;
+    justify-items: start;
     row-gap: 2rem;
     padding: 7rem 0; }
 
@@ -89,7 +90,7 @@ button {
     width: 0.6rem;
     height: 100%;
     background-image: var(--default-vertical-linear-gradient); } }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 90em) {
   .white-box .text-box-content, .black-box .text-box-content {
     grid-template-columns: 63%; } }
 /**

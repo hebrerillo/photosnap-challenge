@@ -12,6 +12,7 @@
     padding: 0 3rem;
     .text-box-content {
         display: grid;
+        justify-items: start;
         row-gap: 2rem;
         padding: 7rem 0;
     }
@@ -50,7 +51,7 @@
     }
 }
 
-@media only screen and (min-width: $minWidthTabletPortrait) {
+@media only screen and (min-width: $minWidthDesktop) {
     .white-box, .black-box {
         .text-box-content {
             grid-template-columns: 63%;
