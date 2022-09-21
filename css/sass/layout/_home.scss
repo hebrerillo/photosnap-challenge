@@ -33,4 +33,8 @@
             grid-template-areas: "image text";
         }
     }
+    
+    @media only screen and (min-width: $minWidthDesktop) {
+        --percentage-image: 57.6%;
+    }
 }

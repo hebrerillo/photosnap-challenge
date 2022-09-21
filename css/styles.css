@@ -256,5 +256,8 @@ button {
     .home-content .picture-text-box:nth-child(even) {
       grid-template-columns: var(--percentage-image) 1fr;
       grid-template-areas: "image text"; } }
+@media only screen and (min-width: 90em) {
+  .home-content {
+    --percentage-image: 57.6%; } }
 
 /*# sourceMappingURL=styles.css.map */
