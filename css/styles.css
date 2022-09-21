@@ -175,7 +175,8 @@ button {
     height: calc(100vh - var(--header-height));
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity var(--default-transition-time); }
+    transition: opacity var(--default-transition-time);
+    z-index: 3; }
     .main-header .header__nav .nav-invite--container {
       display: grid;
       grid-template-columns: minmax(auto, 31rem);
@@ -214,7 +215,8 @@ button {
         transition: none;
         width: auto;
         height: auto;
-        background-color: transparent; }
+        background-color: transparent;
+        z-index: auto; }
         .main-header .header__nav .nav-invite--container {
           grid-template-columns: 1fr var(--logo-width);
           row-gap: 0;
