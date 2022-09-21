@@ -245,13 +245,16 @@ button {
     --percentage-image: 35.5%;
     /* The percentage of the image */ }
     .home-content .picture-text-box {
-      display: grid;
-      grid-template-areas: "text image"; }
-    .home-content .picture-text-box:nth-child(odd) {
-      grid-template-columns: 1fr var(--percentage-image); }
-      .home-content .picture-text-box:nth-child(odd) picture {
+      display: grid; }
+      .home-content .picture-text-box picture {
         grid-area: image; }
-      .home-content .picture-text-box:nth-child(odd) .black-box, .home-content .picture-text-box:nth-child(odd) .white-box {
-        grid-area: text; } }
+      .home-content .picture-text-box .black-box, .home-content .picture-text-box .white-box {
+        grid-area: text; }
+    .home-content .picture-text-box:nth-child(odd) {
+      grid-template-columns: 1fr var(--percentage-image);
+      grid-template-areas: "text image"; }
+    .home-content .picture-text-box:nth-child(even) {
+      grid-template-columns: var(--percentage-image) 1fr;
+      grid-template-areas: "image text"; } }
 
 /*# sourceMappingURL=styles.css.map */

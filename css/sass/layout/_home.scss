@@ -14,12 +14,6 @@
 
         .picture-text-box {
             display: grid;
-            grid-template-areas: "text image";
-        }
-
-        .picture-text-box:nth-child(odd) {
-            grid-template-columns: 1fr var(--percentage-image);
-
             picture {
                 grid-area: image;
             }
@@ -27,6 +21,16 @@
             .black-box, .white-box {
                 grid-area: text;
             }
+        }
+
+        .picture-text-box:nth-child(odd) {
+            grid-template-columns: 1fr var(--percentage-image);
+            grid-template-areas: "text image";
+        }
+
+        .picture-text-box:nth-child(even) {
+            grid-template-columns: var(--percentage-image) 1fr;
+            grid-template-areas: "image text";
         }
     }
 }
