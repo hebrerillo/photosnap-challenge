@@ -4,7 +4,7 @@
     padding: 0 2.5rem;
 
     .logo {
-        width: 17rem;
+        width: var(--logo-width);
         height: 1.6rem;
     }
 
@@ -61,10 +61,55 @@
     .header__nav.header__nav--display {
         display: block;
     }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+        display: grid;
+        grid-template-columns: var(--logo-width) 1fr;
+        padding: 0 4rem;
+        .showhide-buttons {
+            display: none;
+        }
+
+        .header__nav {
+            display: block;
+            position: static;
+            opacity: 1;
+            transition: none;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+
+            .nav-invite--container {
+                grid-template-columns: 1fr var(--logo-width);
+                row-gap: 0;
+                padding: 0;
+                background-color: transparent;
+                ul {
+                    align-items: center;
+                    flex-direction: row;
+                    row-gap: 0rem;
+                    column-gap: 2.5rem;
+                    padding-bottom: 0;
+                    border-bottom: none;
+                    justify-self: center;
+                }
+
+                .button--1 {
+                    height: 4rem;
+                    padding: 0 3rem;
+                    justify-self: end;
+                }
+
+                ul, .button--1 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
 }
 
 .main-header.header__nav--fade-in  {
-
     .showhide-buttons {
         .open-menu {
             display: none;
