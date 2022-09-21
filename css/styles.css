@@ -45,6 +45,7 @@ button {
 
 .main-container {
   min-height: 100vh;
+  max-width: 170rem;
   margin: 0 auto; }
 
 .black-box {
@@ -88,6 +89,9 @@ button {
     width: 0.6rem;
     height: 100%;
     background-image: var(--default-vertical-linear-gradient); } }
+@media only screen and (min-width: 48rem) {
+  .white-box .text-box-content, .black-box .text-box-content {
+    grid-template-columns: 63%; } }
 /**
  * A flex container with elements that are both horizontally and vertically centered.
  */
@@ -228,6 +232,9 @@ button {
             justify-self: end; }
           .main-header .header__nav .nav-invite--container ul, .main-header .header__nav .nav-invite--container .button--1 {
             font-size: 1.2rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .main-header {
+      padding: 0; } }
 
 .main-header.header__nav--fade-in .showhide-buttons .open-menu {
   display: none; }

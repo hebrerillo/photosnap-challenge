@@ -107,6 +107,10 @@
         }
 
     }
+    
+    @media only screen and (min-width: $minWidthBigDesktop) {
+        padding: 0;
+    }
 }
 
 .main-header.header__nav--fade-in  {

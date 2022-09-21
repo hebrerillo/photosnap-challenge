@@ -32,7 +32,6 @@
 }
 
 @media only screen and (min-width: $minWidthTabletPortrait) {
-
     .white-box, .black-box {
         display: flex;
         align-items: center;
@@ -48,5 +47,13 @@
         width: 0.6rem;
         height: 100%;
         background-image: var(--default-vertical-linear-gradient);
+    }
+}
+
+@media only screen and (min-width: $minWidthTabletPortrait) {
+    .white-box, .black-box {
+        .text-box-content {
+            grid-template-columns: 63%;
+        }
     }
 }
