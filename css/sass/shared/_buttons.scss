@@ -1,8 +1,6 @@
 .button {
     @include flex-vcenter-hcenter;
     height: 4rem;
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 .button--1 {

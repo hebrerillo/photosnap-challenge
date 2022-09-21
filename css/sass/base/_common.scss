@@ -1,0 +1,13 @@
+.black-box {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.white-box {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.black-box, .white-box {
+    padding: 7rem 3rem;
+}

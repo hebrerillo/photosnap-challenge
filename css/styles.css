@@ -45,6 +45,17 @@ button {
   min-height: 100vh;
   margin: 0 auto; }
 
+.black-box {
+  background-color: var(--black);
+  color: var(--white); }
+
+.white-box {
+  background-color: var(--white);
+  color: var(--black); }
+
+.black-box, .white-box {
+  padding: 7rem 3rem; }
+
 /**
  * A flex container with elements that are both horizontally and vertically centered.
  */
@@ -59,9 +70,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4rem;
-  text-transform: uppercase;
-  font-weight: 700; }
+  height: 4rem; }
 
 .button--1 {
   background-color: var(--black);
@@ -74,6 +83,28 @@ button {
 .link:hover {
   opacity: 0.3; }
 
+.heading-2 {
+  font-size: 3.2rem;
+  letter-spacing: 3.33px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1; }
+
+.default-paragraph {
+  opacity: 0.6;
+  font-size: 1.5rem;
+  line-height: 1.6; }
+
+.arrow-button {
+  letter-spacing: 2px; }
+
+.button, .arrow-button {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+@media only screen and (min-width: 48rem) {
+  .heading-2 {
+    font-size: 4rem; } }
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -160,5 +191,11 @@ button {
   display: block; }
 .main-header.header__nav--fade-in .header__nav {
   opacity: 1; }
+
+.home-content article {
+  display: grid;
+  row-gap: 2rem; }
+  .home-content article .arrow-button {
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=styles.css.map */
