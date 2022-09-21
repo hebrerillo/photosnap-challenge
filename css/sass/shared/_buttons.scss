@@ -26,14 +26,14 @@
     span {
         border-bottom: 1px solid transparent;
     }
-    
-    span:hover {
-        border-bottom: 1px solid currentColor;
-    }
-    
+
     svg {
         g {
             stroke: currentColor;
         }
     }
+}
+
+.arrow-button:hover span {
+    border-bottom: 1px solid currentColor;
 }

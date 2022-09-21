@@ -126,10 +126,11 @@ button {
 
 .arrow-button span {
   border-bottom: 1px solid transparent; }
-.arrow-button span:hover {
-  border-bottom: 1px solid currentColor; }
 .arrow-button svg g {
   stroke: currentColor; }
+
+.arrow-button:hover span {
+  border-bottom: 1px solid currentColor; }
 
 .heading-2 {
   font-size: 3.2rem;
