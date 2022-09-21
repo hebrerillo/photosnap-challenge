@@ -9,6 +9,11 @@
         }
     }
 
+    .gallery-item:nth-child(1) {
+        background-image: url('../assets/stories/mobile/mountains.jpg');
+        background-size: cover;
+    }
+    
     @media only screen and (min-width: $minWidthTabletPortrait) {
         --percentage-image: 35.5%; /* The percentage of the image */
 

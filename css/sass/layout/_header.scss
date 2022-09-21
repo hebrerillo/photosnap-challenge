@@ -24,7 +24,7 @@
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 0;
         transition: opacity var(--default-transition-time);
-        z-index: 3;
+        z-index: 30;
         .nav-invite--container {
             display: grid;
             grid-template-columns: minmax(auto, 31rem);

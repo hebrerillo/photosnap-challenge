@@ -152,9 +152,36 @@ button {
   text-transform: uppercase;
   font-weight: 700; }
 
+.light-text {
+  font-size: 1.3rem;
+  font-size: 400; }
+
 @media only screen and (min-width: 48rem) {
   .heading-2 {
     font-size: 4rem; } }
+.gallery {
+  display: grid; }
+  .gallery .gallery-item {
+    display: grid;
+    align-content: end;
+    position: relative;
+    min-height: 37.5rem;
+    color: var(--white);
+    z-index: 2; }
+    .gallery .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: -1; }
+    .gallery .gallery-item .gallery-item__description {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem; }
+  @media only screen and (min-width: 48rem) {
+    .gallery .gallery-item {
+      min-height: 50rem; } }
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -176,7 +203,7 @@ button {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity var(--default-transition-time);
-    z-index: 3; }
+    z-index: 30; }
     .main-header .header__nav .nav-invite--container {
       display: grid;
       grid-template-columns: minmax(auto, 31rem);
@@ -251,6 +278,9 @@ button {
   font-size: 1.2rem; }
 .home-content picture img {
   width: 100%; }
+.home-content .gallery-item:nth-child(1) {
+  background-image: url("../assets/stories/mobile/mountains.jpg");
+  background-size: cover; }
 @media only screen and (min-width: 48rem) {
   .home-content {
     --percentage-image: 35.5%;
