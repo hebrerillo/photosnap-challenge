@@ -1,10 +1,14 @@
 .home-content {
-    article {
-        display: grid;
-        row-gap: 2rem;
 
-        .arrow-button {
-            font-size: 1.2rem;
+    .arrow-button {
+        font-size: 1.2rem;
+    }
+
+    .picture-text-box {
+        picture {
+            img {
+                width: 100%;
+            }
         }
     }
 }

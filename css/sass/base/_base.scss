@@ -1,6 +1,8 @@
 :root {
     --logo-width: 17rem;
     --default-transition-time: 0.3s;
+    --default-horizontal-linear-gradient: linear-gradient(to top right, #FFC593, #bc7198, #5a77ff);
+    --default-vertical-linear-gradient: linear-gradient(to bottom left, #5a77ff, #bc7198 70%, #FFC593);
     
     /** LAYOUT SIZES **/
     --header-height: 7.2rem;
