@@ -10,19 +10,20 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        --percentage-image: 35.5%; //The percentage of the image
+        --percentage-image: 35.5%; /* The percentage of the image */
+
         .picture-text-box {
             display: grid;
             grid-template-areas: "text image";
         }
-        
-        .picture-text-box--even {
+
+        .picture-text-box:nth-child(odd) {
             grid-template-columns: 1fr var(--percentage-image);
 
             picture {
                 grid-area: image;
             }
-            
+
             .black-box, .white-box {
                 grid-area: text;
             }

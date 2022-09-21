@@ -76,7 +76,9 @@ button {
 
 @media only screen and (min-width: 48rem) {
   .white-box, .black-box {
-    padding: 8rem 0; }
+    display: flex;
+    align-items: center;
+    padding: 0; }
     .white-box .text-box-content, .black-box .text-box-content {
       grid-template-columns: 78%;
       justify-content: center;
@@ -130,12 +132,12 @@ button {
   letter-spacing: 3.33px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.1; }
+  line-height: 1.2; }
 
 .default-paragraph {
   opacity: 0.6;
   font-size: 1.5rem;
-  line-height: 1.6; }
+  line-height: 1.7; }
 
 .arrow-button {
   letter-spacing: 2px; }
@@ -240,15 +242,16 @@ button {
   width: 100%; }
 @media only screen and (min-width: 48rem) {
   .home-content {
-    --percentage-image: 35.5%; }
+    --percentage-image: 35.5%;
+    /* The percentage of the image */ }
     .home-content .picture-text-box {
       display: grid;
       grid-template-areas: "text image"; }
-    .home-content .picture-text-box--even {
+    .home-content .picture-text-box:nth-child(odd) {
       grid-template-columns: 1fr var(--percentage-image); }
-      .home-content .picture-text-box--even picture {
+      .home-content .picture-text-box:nth-child(odd) picture {
         grid-area: image; }
-      .home-content .picture-text-box--even .black-box, .home-content .picture-text-box--even .white-box {
+      .home-content .picture-text-box:nth-child(odd) .black-box, .home-content .picture-text-box:nth-child(odd) .white-box {
         grid-area: text; } }
 
 /*# sourceMappingURL=styles.css.map */
