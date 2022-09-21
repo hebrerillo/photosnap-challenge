@@ -78,7 +78,7 @@ button {
   .white-box, .black-box {
     padding: 8rem 0; }
     .white-box .text-box-content, .black-box .text-box-content {
-      grid-template-columns: 80%;
+      grid-template-columns: 78%;
       justify-content: center;
       padding: 0; }
 
@@ -236,7 +236,19 @@ button {
 
 .home-content .arrow-button {
   font-size: 1.2rem; }
-.home-content .picture-text-box picture img {
+.home-content picture img {
   width: 100%; }
+@media only screen and (min-width: 48rem) {
+  .home-content {
+    --percentage-image: 35.5%; }
+    .home-content .picture-text-box {
+      display: grid;
+      grid-template-areas: "text image"; }
+    .home-content .picture-text-box--even {
+      grid-template-columns: 1fr var(--percentage-image); }
+      .home-content .picture-text-box--even picture {
+        grid-area: image; }
+      .home-content .picture-text-box--even .black-box, .home-content .picture-text-box--even .white-box {
+        grid-area: text; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,13 +1,30 @@
 .home-content {
-
     .arrow-button {
         font-size: 1.2rem;
     }
 
-    .picture-text-box {
-        picture {
-            img {
-                width: 100%;
+    picture {
+        img {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+        --percentage-image: 35.5%; //The percentage of the image
+        .picture-text-box {
+            display: grid;
+            grid-template-areas: "text image";
+        }
+        
+        .picture-text-box--even {
+            grid-template-columns: 1fr var(--percentage-image);
+
+            picture {
+                grid-area: image;
+            }
+            
+            .black-box, .white-box {
+                grid-area: text;
             }
         }
     }
