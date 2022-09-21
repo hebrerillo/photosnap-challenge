@@ -83,6 +83,18 @@ button {
 .link:hover {
   opacity: 0.3; }
 
+.arrow-button {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem; }
+
+.arrow-button span {
+  border-bottom: 1px solid transparent; }
+.arrow-button span:hover {
+  border-bottom: 1px solid currentColor; }
+.arrow-button svg g {
+  stroke: currentColor; }
+
 .heading-2 {
   font-size: 3.2rem;
   letter-spacing: 3.33px;
