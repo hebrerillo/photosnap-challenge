@@ -57,29 +57,23 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
     }
-
-    .header__nav.header__nav--display {
-        display: grid;
-    }
 }
 
 /* This rule is to set the same height and horizontal padding to both the header and the header of the modal popup */
-.main-header, 
+.main-header,
 .main-header .header__nav .header__nav--header {
     @include flex-vcenter-hevently;
     height: 7.2rem;
     padding: 0 2.5rem;
 }
 
+.main-header.header__nav--display {
+    .header__nav {
+        display: grid;
+    }
+}
+
 .main-header.header__nav--fade-in  {
-    .open-menu {
-        display: none;
-    }
-
-    .close-menu {
-        display: block;
-    }
-
     .header__nav {
         opacity: 1;
     }

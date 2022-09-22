@@ -221,8 +221,6 @@ button {
       font-size: 1.5rem; }
   .main-header .header__nav .header__nav_background {
     background-color: rgba(0, 0, 0, 0.5); }
-.main-header .header__nav.header__nav--display {
-  display: grid; }
 
 /* This rule is to set the same height and horizontal padding to both the header and the header of the modal popup */
 .main-header,
@@ -233,10 +231,9 @@ button {
   height: 7.2rem;
   padding: 0 2.5rem; }
 
-.main-header.header__nav--fade-in .open-menu {
-  display: none; }
-.main-header.header__nav--fade-in .close-menu {
-  display: block; }
+.main-header.header__nav--display .header__nav {
+  display: grid; }
+
 .main-header.header__nav--fade-in .header__nav {
   opacity: 1; }
 
