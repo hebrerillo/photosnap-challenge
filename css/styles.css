@@ -304,6 +304,15 @@ button {
 .home-content .gallery-item:nth-child(1) {
   background-image: url("../assets/stories/mobile/mountains.jpg");
   background-size: cover; }
+.home-content .gallery-item:nth-child(2) {
+  background-image: url("../assets/stories/mobile/cityscapes.jpg");
+  background-size: cover; }
+.home-content .gallery-item:nth-child(3) {
+  background-image: url("../assets/stories/mobile/18-days-voyage.jpg");
+  background-size: cover; }
+.home-content .gallery-item:nth-child(4) {
+  background-image: url("../assets/stories/mobile/architecturals.jpg");
+  background-size: cover; }
 @media only screen and (min-width: 48rem) {
   .home-content {
     --percentage-image: 35.5%;
