@@ -8,6 +8,8 @@
         color: var(--white);
         z-index: 2;
         padding: 4.5rem 3rem;
+        background-size: cover;
+        background-position: center;
 
         &::after {
             content: "";
@@ -41,8 +43,13 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
+        grid-template-columns: 1fr 1fr;
         .gallery-item {
             min-height: 50rem;
         }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

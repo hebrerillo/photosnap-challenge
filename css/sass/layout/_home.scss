@@ -11,26 +11,22 @@
 
     .gallery-item:nth-child(1) {
         background-image: url('../assets/stories/mobile/mountains.jpg');
-        background-size: cover;
     }
 
     .gallery-item:nth-child(2) {
         background-image: url('../assets/stories/mobile/cityscapes.jpg');
-        background-size: cover;
     }
 
     .gallery-item:nth-child(3) {
         background-image: url('../assets/stories/mobile/18-days-voyage.jpg');
-        background-size: cover;
     }
 
     .gallery-item:nth-child(4) {
         background-image: url('../assets/stories/mobile/architecturals.jpg');
-        background-size: cover;
     }
     
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        --percentage-image: 35.5%; /* The percentage of the image */
+        --percenage-hero-images: 35.5%; /* The percentage of the hero images */
 
         .picture-text-box {
             display: grid;
@@ -44,17 +40,17 @@
         }
 
         .picture-text-box:nth-child(odd) {
-            grid-template-columns: 1fr var(--percentage-image);
+            grid-template-columns: 1fr var(--percenage-hero-images);
             grid-template-areas: "text image";
         }
 
         .picture-text-box:nth-child(even) {
-            grid-template-columns: var(--percentage-image) 1fr;
+            grid-template-columns: var(--percenage-hero-images) 1fr;
             grid-template-areas: "image text";
         }
     }
     
     @media only screen and (min-width: $minWidthDesktop) {
-        --percentage-image: 57.6%;
+        --percenage-hero-images: 57.6%;
     }
 }

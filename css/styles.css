@@ -173,7 +173,9 @@ button {
     min-height: 37.5rem;
     color: var(--white);
     z-index: 2;
-    padding: 4.5rem 3rem; }
+    padding: 4.5rem 3rem;
+    background-size: cover;
+    background-position: center; }
     .gallery .gallery-item::after {
       content: "";
       position: absolute;
@@ -196,8 +198,13 @@ button {
     .gallery .gallery-item .arrow-button:hover span {
       border-bottom: none; }
   @media only screen and (min-width: 48rem) {
-    .gallery .gallery-item {
-      min-height: 50rem; } }
+    .gallery {
+      grid-template-columns: 1fr 1fr; }
+      .gallery .gallery-item {
+        min-height: 50rem; } }
+  @media only screen and (min-width: 90em) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr); } }
 
 .main-header .logo {
   width: var(--logo-width);
@@ -302,21 +309,17 @@ button {
 .home-content picture img {
   width: 100%; }
 .home-content .gallery-item:nth-child(1) {
-  background-image: url("../assets/stories/mobile/mountains.jpg");
-  background-size: cover; }
+  background-image: url("../assets/stories/mobile/mountains.jpg"); }
 .home-content .gallery-item:nth-child(2) {
-  background-image: url("../assets/stories/mobile/cityscapes.jpg");
-  background-size: cover; }
+  background-image: url("../assets/stories/mobile/cityscapes.jpg"); }
 .home-content .gallery-item:nth-child(3) {
-  background-image: url("../assets/stories/mobile/18-days-voyage.jpg");
-  background-size: cover; }
+  background-image: url("../assets/stories/mobile/18-days-voyage.jpg"); }
 .home-content .gallery-item:nth-child(4) {
-  background-image: url("../assets/stories/mobile/architecturals.jpg");
-  background-size: cover; }
+  background-image: url("../assets/stories/mobile/architecturals.jpg"); }
 @media only screen and (min-width: 48rem) {
   .home-content {
-    --percentage-image: 35.5%;
-    /* The percentage of the image */ }
+    --percenage-hero-images: 35.5%;
+    /* The percentage of the hero images */ }
     .home-content .picture-text-box {
       display: grid; }
       .home-content .picture-text-box picture {
@@ -324,13 +327,13 @@ button {
       .home-content .picture-text-box .black-box, .home-content .picture-text-box .white-box {
         grid-area: text; }
     .home-content .picture-text-box:nth-child(odd) {
-      grid-template-columns: 1fr var(--percentage-image);
+      grid-template-columns: 1fr var(--percenage-hero-images);
       grid-template-areas: "text image"; }
     .home-content .picture-text-box:nth-child(even) {
-      grid-template-columns: var(--percentage-image) 1fr;
+      grid-template-columns: var(--percenage-hero-images) 1fr;
       grid-template-areas: "image text"; } }
 @media only screen and (min-width: 90em) {
   .home-content {
-    --percentage-image: 57.6%; } }
+    --percenage-hero-images: 57.6%; } }
 
 /*# sourceMappingURL=styles.css.map */
