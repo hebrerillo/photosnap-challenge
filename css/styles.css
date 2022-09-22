@@ -173,7 +173,7 @@ button {
     min-height: 37.5rem;
     color: var(--white);
     z-index: 2;
-    padding: 4rem 3rem; }
+    padding: 4.5rem 3rem; }
     .gallery .gallery-item::after {
       content: "";
       position: absolute;
