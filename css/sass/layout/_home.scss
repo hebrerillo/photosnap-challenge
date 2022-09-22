@@ -24,7 +24,7 @@
     .gallery-item:nth-child(4) {
         background-image: url('../assets/stories/mobile/architecturals.jpg');
     }
-    
+
     @media only screen and (min-width: $minWidthTabletPortrait) {
         --percenage-hero-images: 35.5%; /* The percentage of the hero images */
 
@@ -49,8 +49,23 @@
             grid-template-areas: "image text";
         }
     }
-    
+
     @media only screen and (min-width: $minWidthDesktop) {
         --percenage-hero-images: 57.6%;
+        .gallery-item:nth-child(1) {
+            background-image: url('../assets/stories/desktop/mountains.jpg');
+        }
+
+        .gallery-item:nth-child(2) {
+            background-image: url('../assets/stories/desktop/cityscapes.jpg');
+        }
+
+        .gallery-item:nth-child(3) {
+            background-image: url('../assets/stories/desktop/18-days-voyage.jpg');
+        }
+
+        .gallery-item:nth-child(4) {
+            background-image: url('../assets/stories/desktop/architecturals.jpg');
+        }
     }
 }

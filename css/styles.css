@@ -334,6 +334,14 @@ button {
       grid-template-areas: "image text"; } }
 @media only screen and (min-width: 90em) {
   .home-content {
-    --percenage-hero-images: 57.6%; } }
+    --percenage-hero-images: 57.6%; }
+    .home-content .gallery-item:nth-child(1) {
+      background-image: url("../assets/stories/desktop/mountains.jpg"); }
+    .home-content .gallery-item:nth-child(2) {
+      background-image: url("../assets/stories/desktop/cityscapes.jpg"); }
+    .home-content .gallery-item:nth-child(3) {
+      background-image: url("../assets/stories/desktop/18-days-voyage.jpg"); }
+    .home-content .gallery-item:nth-child(4) {
+      background-image: url("../assets/stories/desktop/architecturals.jpg"); } }
 
 /*# sourceMappingURL=styles.css.map */
