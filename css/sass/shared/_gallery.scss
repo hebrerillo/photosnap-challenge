@@ -7,19 +7,36 @@
         min-height: 37.5rem;
         color: var(--white);
         z-index: 2;
+        padding: 4rem 3rem;
 
         &::after {
             content: "";
             position: absolute;
             inset: 0;
-            background-color: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6));
             z-index: -1;
         }
 
         .gallery-item__description {
             display: flex;
             flex-direction: column;
+            align-items: start;
             row-gap: 1rem;
+            padding-bottom: 1.8rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        
+        .arrow-button {
+            padding-top: 1.8rem;
+            justify-content: space-between;
+            column-gap: 0;
+            span {
+                border-bottom: none;
+            }
+        }
+        
+        .arrow-button:hover span {
+            border-bottom: none;
         }
     }
 

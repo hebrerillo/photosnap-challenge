@@ -21,14 +21,17 @@
     font-weight: 700;
 }
 
-.light-text {
+/** GALLERY STYLES **/
+.gallery-item__author {
     font-size: 1.3rem;
     font-size: 400;
 }
 
 .title-gallery-item {
-    
+    font-size: 1.8rem;
+    font-weight: 700;
 }
+/********************/
 
 @media only screen and (min-width: $minWidthTabletPortrait) {
     .heading-2 {
