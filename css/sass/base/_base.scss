@@ -1,13 +1,17 @@
 :root {
     --logo-width: 17rem;
     --default-transition-time: 0.3s;
-    --default-horizontal-linear-gradient: linear-gradient(to top right, #FFC593, #bc7198, #5a77ff);
-    --default-vertical-linear-gradient: linear-gradient(to bottom left, #5a77ff, #bc7198 70%, #FFC593);
 
     /** COLORS **/
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --light-grey: hsl(0, 0%, 87%);
+    --gradient-orange: #FFC593;
+    --gradient-purple: #BC7198;
+    --gradient-blue: #5A77FF;
+    --default-horizontal-linear-gradient: linear-gradient(to top right,
+        var(--gradient-orange), var(--gradient-purple), var(--gradient-blue));
+    --default-vertical-linear-gradient: linear-gradient(to bottom left, var(--gradient-blue), var(--gradient-purple) 70%, var(--gradient-orange));
 }
 
 html {
