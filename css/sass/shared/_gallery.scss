@@ -51,5 +51,11 @@
 
     @media only screen and (min-width: $minWidthDesktop) {
         grid-template-columns: repeat(4, 1fr);
+        .gallery-item {
+            transition: all var(--default-transition-time);
+        }
+        .gallery-item:hover {
+            transform: translateY(-2rem);
+        }
     }
 }

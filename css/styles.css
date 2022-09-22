@@ -204,7 +204,11 @@ button {
         min-height: 50rem; } }
   @media only screen and (min-width: 90em) {
     .gallery {
-      grid-template-columns: repeat(4, 1fr); } }
+      grid-template-columns: repeat(4, 1fr); }
+      .gallery .gallery-item {
+        transition: all var(--default-transition-time); }
+      .gallery .gallery-item:hover {
+        transform: translateY(-2rem); } }
 
 .main-header .logo {
   width: var(--logo-width);
