@@ -1,6 +1,6 @@
 .main-header {
     @include flex-vcenter-hevently;
-    height: var(--header-height);
+    height: 7.2rem;
     padding: 0 2.5rem;
 
     .logo {
@@ -14,14 +14,19 @@
         }
     }
 
+    .logo, .showhide-buttons {
+        position: relative;
+        z-index: 25;
+    }
+
     .header__nav {
         display: none;
         grid-template-rows: auto 1fr;
         position: absolute;
-        top: var(--header-height);
+        top: 0;
         left: 0;
         width: 100vw;
-        min-height: calc(100% - var(--header-height));
+        min-height: 100%;
         opacity: 0;
         transition: opacity var(--default-transition-time);
         z-index: 20;
@@ -31,7 +36,7 @@
             justify-content: center;
             row-gap: 2rem;
             background-color: var(--white);
-            padding: 4rem 1rem;
+            padding: 11rem 1rem 7rem 1rem;
 
             ul {
                 display: flex;
@@ -57,7 +62,7 @@
                 font-size: 1.5rem;
             }
         }
-        
+
         .header__nav_background {
             background-color: rgba(0, 0, 0, 0.5);
         }
@@ -71,6 +76,12 @@
         display: grid;
         grid-template-columns: var(--logo-width) 1fr;
         padding: 0 4rem;
+
+        .logo {
+            position: static;
+            z-index: auto;
+        }
+
         .showhide-buttons {
             display: none;
         }
@@ -109,14 +120,14 @@
                     font-size: 1.2rem;
                 }
             }
-            
+
             .header__nav_background {
                 display: none;
             }
         }
 
     }
-    
+
     @media only screen and (min-width: $minWidthBigDesktop) {
         padding: 0;
     }
