@@ -212,7 +212,7 @@ button {
       justify-content: center;
       row-gap: 2rem;
       background-color: var(--white);
-      padding: 11rem 1rem 7rem 1rem; }
+      padding: 11rem 1rem 3rem 1rem; }
       .main-header .header__nav .nav-invite--container ul {
         display: flex;
         flex-direction: column;
