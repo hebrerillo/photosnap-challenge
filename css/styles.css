@@ -46,7 +46,8 @@ button {
 .main-container {
   min-height: 100vh;
   max-width: 170rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .black-box {
   background-color: var(--black);
@@ -195,11 +196,11 @@ button {
     display: none; }
   .main-header .header__nav {
     display: none;
-    position: fixed;
+    position: absolute;
     top: var(--header-height);
     left: 0;
     width: 100vw;
-    height: calc(100vh - var(--header-height));
+    min-height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity var(--default-transition-time);
@@ -241,7 +242,7 @@ button {
         opacity: 1;
         transition: none;
         width: auto;
-        height: auto;
+        min-height: auto;
         background-color: transparent;
         z-index: auto; }
         .main-header .header__nav .nav-invite--container {
