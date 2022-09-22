@@ -143,6 +143,10 @@ button {
   text-transform: uppercase;
   line-height: 1.2; }
 
+.heading-5 {
+  font-size: 1.8rem;
+  font-weight: 700; }
+
 .default-paragraph {
   opacity: 0.6;
   font-size: 1.5rem;
@@ -332,6 +336,21 @@ button {
   background-image: url("../assets/stories/mobile/18-days-voyage.jpg"); }
 .home-content .gallery-item:nth-child(4) {
   background-image: url("../assets/stories/mobile/architecturals.jpg"); }
+.home-content .home-features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.5rem;
+  padding: 8rem 4rem; }
+  .home-content .home-features .home-feature {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: start;
+    text-align: center; }
+    .home-content .home-features .home-feature img {
+      margin-bottom: 4rem; }
+    .home-content .home-features .home-feature .heading-5 {
+      margin-bottom: 2rem; }
 @media only screen and (min-width: 48rem) {
   .home-content {
     --percenage-hero-images: 35.5%;
@@ -347,10 +366,23 @@ button {
       grid-template-areas: "text image"; }
     .home-content .picture-text-box:nth-child(even) {
       grid-template-columns: var(--percenage-hero-images) 1fr;
-      grid-template-areas: "image text"; } }
+      grid-template-areas: "image text"; }
+    .home-content .home-features .home-feature {
+      grid-template-columns: 65%; } }
 @media only screen and (min-width: 90em) {
   .home-content {
     --percenage-hero-images: 57.6%; }
+    .home-content .home-features {
+      flex-direction: row;
+      row-gap: 0;
+      column-gap: 4rem;
+      justify-content: space-between;
+      padding: 11.5rem 17rem; }
+      .home-content .home-features .home-feature {
+        grid-template-columns: auto;
+        grid-template-rows: 11rem auto auto; }
+        .home-content .home-features .home-feature img {
+          margin-bottom: 0; }
     .home-content .gallery-item:nth-child(1) {
       background-image: url("../assets/stories/desktop/mountains.jpg"); }
     .home-content .gallery-item:nth-child(2) {
