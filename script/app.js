@@ -4,20 +4,26 @@ class App
     #navigationMenu;
     #openMenu;
     #closeMenu;
+    #menuBackground;
     constructor()
     {
         this.#mainHeader = document.querySelector('.main-header');
         this.#navigationMenu = this.#mainHeader.querySelector('.header__nav');
         this.#openMenu = this.#mainHeader.querySelector('.open-menu');
         this.#closeMenu = this.#mainHeader.querySelector('.close-menu');
+        this.#menuBackground = this.#navigationMenu.querySelector('.header__nav_background')
         this.setEvents();
     }
     
     setEvents()
     {
         this.#openMenu.addEventListener('click', this.showNavigationMenu.bind(this));
-        this.#closeMenu.addEventListener('click', this.closeNavigationMenu.bind(this));
         this.#navigationMenu.addEventListener('transitionend', this.navigationMenuTransitionEnd.bind(this));
+
+        /* Setting the same function to close the modal menu for those elements that can close the modal menu. */
+        [this.#closeMenu, this.#menuBackground].forEach(closeMenuItem => {
+            closeMenuItem.addEventListener('click', this.closeNavigationMenu.bind(this));
+        });
     }
     
     /**

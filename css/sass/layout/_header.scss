@@ -16,15 +16,15 @@
 
     .header__nav {
         display: none;
+        grid-template-rows: auto 1fr;
         position: absolute;
         top: var(--header-height);
         left: 0;
         width: 100vw;
-        min-height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        min-height: calc(100% - var(--header-height));
         opacity: 0;
         transition: opacity var(--default-transition-time);
-        z-index: 30;
+        z-index: 20;
         .nav-invite--container {
             display: grid;
             grid-template-columns: minmax(auto, 31rem);
@@ -57,10 +57,14 @@
                 font-size: 1.5rem;
             }
         }
+        
+        .header__nav_background {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
     }
 
     .header__nav.header__nav--display {
-        display: block;
+        display: grid;
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
@@ -104,6 +108,10 @@
                 ul, .button--1 {
                     font-size: 1.2rem;
                 }
+            }
+            
+            .header__nav_background {
+                display: none;
             }
         }
 
