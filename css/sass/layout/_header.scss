@@ -1,8 +1,4 @@
 .main-header {
-    .logo {
-        width: var(--logo-width);
-        height: 1.6rem;
-    }
 
     .header__nav {
         display: none;
@@ -35,13 +31,6 @@
                 text-align: center;
                 padding-bottom: 2rem;
                 border-bottom: 1px solid var(--light-grey);
-                li {
-                    a {
-                        letter-spacing: 2.5px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                    }
-                }
             }
 
             .button--1 {

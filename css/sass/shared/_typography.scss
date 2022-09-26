@@ -19,11 +19,23 @@
 
 .arrow-button {
     letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 .button, .arrow-button {
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.nav-link {
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    opacity: 0.3;
 }
 
 /** GALLERY STYLES **/

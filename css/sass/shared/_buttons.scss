@@ -13,10 +13,6 @@
     color: var(--black);
 }
 
-.link:hover {
-    opacity: 0.3;
-}
-
 .arrow-button {
     @include flex-vcenter;
     column-gap: 1.5rem;

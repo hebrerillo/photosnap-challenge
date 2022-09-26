@@ -1,0 +1,37 @@
+.main-footer {
+    display: grid;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5.5rem 0rem;
+    justify-items: center;
+
+    .logo {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .social-networks  {
+        display: flex;
+        column-gap: 1.5rem;
+        margin-bottom: 4.5rem
+    }
+    
+    .footer__nav {
+        margin-bottom: 12rem;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1.5rem;
+        }
+    }
+    
+    .arrow-button {
+        margin-bottom: 3.5rem;
+    }
+    
+    .footer__copy {
+        font-size: 1.5rem;
+        opacity: 0.5;
+    }
+}

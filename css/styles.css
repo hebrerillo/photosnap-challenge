@@ -51,6 +51,12 @@ button {
   margin: 0 auto;
   position: relative; }
 
+.logo {
+  width: var(--logo-width);
+  height: 1.6rem; }
+  .logo img {
+    width: 100%; }
+
 .black-box {
   background-color: var(--black);
   color: var(--white); }
@@ -120,9 +126,6 @@ button {
   background-color: var(--light-grey);
   color: var(--black); }
 
-.link:hover {
-  opacity: 0.3; }
-
 .arrow-button {
   display: flex;
   align-items: center;
@@ -153,11 +156,21 @@ button {
   line-height: 1.7; }
 
 .arrow-button {
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-size: 1.2rem; }
 
 .button, .arrow-button {
   text-transform: uppercase;
   font-weight: 700; }
+
+.nav-link {
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.nav-link:hover {
+  opacity: 0.3; }
 
 /** GALLERY STYLES **/
 .gallery-item__author {
@@ -226,9 +239,6 @@ button {
         height: .6rem;
         background-image: linear-gradient(to top right, var(--gradient-orange), var(--gradient-purple) 50%, var(--gradient-blue) 80%); } }
 
-.main-header .logo {
-  width: var(--logo-width);
-  height: 1.6rem; }
 .main-header .header__nav {
   display: none;
   grid-template-rows: auto auto 1fr;
@@ -256,10 +266,6 @@ button {
       text-align: center;
       padding-bottom: 2rem;
       border-bottom: 1px solid var(--light-grey); }
-      .main-header .header__nav .nav-invite--container ul li a {
-        letter-spacing: 2.5px;
-        font-weight: 700;
-        text-transform: uppercase; }
     .main-header .header__nav .nav-invite--container .button--1 {
       height: 4.8rem; }
     .main-header .header__nav .nav-invite--container ul, .main-header .header__nav .nav-invite--container .button--1 {
@@ -394,5 +400,31 @@ button {
       background-image: url("../assets/stories/desktop/18-days-voyage.jpg"); }
     .home-content .gallery-item:nth-child(4) {
       background-image: url("../assets/stories/desktop/architecturals.jpg"); } }
+
+.main-footer {
+  display: grid;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 5.5rem 0rem;
+  justify-items: center; }
+  .main-footer .logo {
+    display: block;
+    margin-bottom: 3rem; }
+  .main-footer .social-networks {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-bottom: 4.5rem; }
+  .main-footer .footer__nav {
+    margin-bottom: 12rem; }
+    .main-footer .footer__nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1.5rem; }
+  .main-footer .arrow-button {
+    margin-bottom: 3.5rem; }
+  .main-footer .footer__copy {
+    font-size: 1.5rem;
+    opacity: 0.5; }
 
 /*# sourceMappingURL=styles.css.map */

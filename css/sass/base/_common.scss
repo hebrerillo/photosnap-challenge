@@ -1,3 +1,11 @@
+.logo {
+    width: var(--logo-width);
+    height: 1.6rem;
+    img {
+        width: 100%;
+    }
+}
+
 .black-box {
     background-color: var(--black);
     color: var(--white);
