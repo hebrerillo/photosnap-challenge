@@ -428,5 +428,33 @@ button {
   .main-footer .footer__copy {
     font-size: 1.5rem;
     opacity: 0.5; }
+  @media only screen and (min-width: 48rem) {
+    .main-footer {
+      padding: 5.5rem 4rem;
+      justify-items: normal;
+      align-items: center;
+      justify-items: start;
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "logo            invite" "nav             .     " "social          copy"; }
+      .main-footer .logo {
+        grid-area: logo; }
+      .main-footer .arrow-button {
+        grid-area: invite; }
+      .main-footer .footer__nav {
+        grid-area: nav;
+        margin-bottom: 7rem; }
+        .main-footer .footer__nav ul {
+          flex-direction: row;
+          column-gap: 3rem; }
+      .main-footer .social-networks {
+        grid-area: social;
+        margin-bottom: 0; }
+      .main-footer .footer__copy {
+        grid-area: copy; }
+      .main-footer .footer__copy, .main-footer .arrow-button {
+        justify-self: end; }
+      .main-footer .logo, .main-footer .arrow-button {
+        margin-bottom: 3rem; } }
 
 /*# sourceMappingURL=styles.css.map */

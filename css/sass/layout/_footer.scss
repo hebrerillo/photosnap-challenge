@@ -38,4 +38,50 @@
         font-size: 1.5rem;
         opacity: 0.5;
     }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+        padding: 5.5rem 4rem;
+        justify-items: normal;
+        align-items: center;
+        justify-items: start;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "logo            invite"
+                             "nav             .     "
+                             "social          copy";
+
+        .logo {
+            grid-area: logo;
+        }
+
+        .arrow-button {
+            grid-area: invite;
+        }
+
+        .footer__nav {
+            grid-area: nav;
+            margin-bottom: 7rem;
+            ul {
+                flex-direction: row;
+                column-gap: 3rem;
+            }
+        }
+
+        .social-networks {
+            grid-area: social;
+            margin-bottom: 0;
+        }
+
+        .footer__copy {
+            grid-area: copy;
+        }
+        
+        .footer__copy, .arrow-button {
+            justify-self: end;
+        }
+
+        .logo, .arrow-button {
+            margin-bottom: 3rem;
+        }
+    }
 }
