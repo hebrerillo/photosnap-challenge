@@ -18,6 +18,10 @@
         img {
             filter: brightness(900%);
         }
+        
+        img:hover {
+            filter: none;
+        }
     }
 
     .footer__nav {

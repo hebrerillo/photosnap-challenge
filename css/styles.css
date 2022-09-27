@@ -412,6 +412,8 @@ button {
     margin-bottom: 4.5rem; }
     .main-footer .social-networks img {
       filter: brightness(900%); }
+    .main-footer .social-networks img:hover {
+      filter: none; }
   .main-footer .footer__nav {
     margin-bottom: 12rem; }
     .main-footer .footer__nav ul {
