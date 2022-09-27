@@ -1,0 +1,30 @@
+.stories-content {
+    .stories-hero {
+        &::before {
+            content: "";
+            display: block;
+            height: 83vw;
+            background-image: url('../assets/stories/mobile/moon-of-appalacia.jpg');
+            background-size: cover;
+        }
+        
+        .stories-hero__text {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 4.5rem 3rem;
+
+            .heading-6, .heading-2, .default-paragraph {
+                margin-bottom: 2rem;
+            }
+
+            .hero-details {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 3rem;
+                .story-date {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
