@@ -433,14 +433,18 @@ button {
     align-items: center;
     background-image: url("../assets/stories/tablet/moon-of-appalacia.jpg");
     background-size: cover;
-    height: 84vw; }
+    padding: 12rem 3rem; }
     .stories-content .stories-hero::before {
       display: none; }
     .stories-content .stories-hero .stories-hero__text {
-      background-color: transparent;
-      padding: 0 3rem; }
+      padding: 0;
+      background-color: transparent; }
       .stories-content .stories-hero .stories-hero__text .default-paragraph {
         width: 39rem; } }
+@media only screen and (min-width: 90em) {
+  .stories-content .stories-hero {
+    padding: 12rem 11rem;
+    background-image: url("../assets/stories/desktop/moon-of-appalacia.jpg"); } }
 
 .main-footer {
   display: grid;

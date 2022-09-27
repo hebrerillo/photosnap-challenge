@@ -34,18 +34,25 @@
             align-items: center;
             background-image: url('../assets/stories/tablet/moon-of-appalacia.jpg');
             background-size: cover;
-            height: 84vw;
+            padding: 12rem 3rem;
 
             &::before {
                 display: none;
             }
             .stories-hero__text {
+                padding: 0;
                 background-color: transparent;
-                padding: 0 3rem;
                 .default-paragraph {
                     width: 39rem;
                 }
             }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthDesktop) {
+        .stories-hero {
+            padding: 12rem 11rem;
+            background-image: url('../assets/stories/desktop/moon-of-appalacia.jpg');
         }
     }
 }
