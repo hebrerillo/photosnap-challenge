@@ -223,6 +223,55 @@ button {
     .gallery {
       grid-template-columns: repeat(4, 1fr); } }
 
+.picture-text-box picture img {
+  width: 100%; }
+.picture-text-box .text-box-content {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  justify-items: start;
+  row-gap: 2rem;
+  padding: 7rem 0; }
+
+.picture-text-box:nth-child(odd) {
+  background-color: var(--black);
+  color: var(--white); }
+
+.picture-text-box:nth-child(even) {
+  background-color: var(--white);
+  color: var(--black); }
+
+@media only screen and (min-width: 48rem) {
+  .picture-text-box {
+    --percenage-hero-images: 35.5%;
+    /* The percentage of the hero images */
+    display: grid;
+    align-items: center; }
+    .picture-text-box picture {
+      grid-area: image; }
+    .picture-text-box .text-box-content {
+      grid-area: text;
+      row-gap: 0;
+      width: auto;
+      margin: 0;
+      padding: 0rem 6rem; }
+      .picture-text-box .text-box-content .heading-2 {
+        margin-bottom: 2rem; }
+      .picture-text-box .text-box-content .default-paragraph {
+        margin-bottom: 5rem; }
+
+  .picture-text-box:nth-child(odd) {
+    grid-template-columns: 1fr var(--percenage-hero-images);
+    grid-template-areas: "text image"; }
+
+  .picture-text-box:nth-child(even) {
+    grid-template-columns: var(--percenage-hero-images) 1fr;
+    grid-template-areas: "image text"; } }
+@media only screen and (min-width: 90em) {
+  .picture-text-box {
+    --percenage-hero-images: 57.6%; }
+    .picture-text-box .text-box-content {
+      padding: 0rem 12rem; } }
 .main-header .header__nav {
   display: none;
   grid-template-rows: auto auto 1fr;
@@ -314,23 +363,8 @@ button {
 @media only screen and (min-width: 112.5em) {
   .main-header {
     padding: 0; } }
-.home-content .picture-text-box .text-box-content {
-  width: 85%;
-  margin: 0 auto;
-  display: grid;
-  justify-items: start;
-  row-gap: 2rem;
-  padding: 7rem 0; }
-.home-content .picture-text-box:nth-child(odd) {
-  background-color: var(--black);
-  color: var(--white); }
-.home-content .picture-text-box:nth-child(even) {
-  background-color: var(--white);
-  color: var(--black); }
 .home-content .arrow-button {
   font-size: 1.2rem; }
-.home-content picture img {
-  width: 100%; }
 .home-content .gallery-item:nth-child(1) {
   background-image: url("../assets/stories/mobile/mountains.jpg"); }
 .home-content .gallery-item:nth-child(2) {
@@ -355,59 +389,31 @@ button {
     .home-content .home-features .home-feature .heading-5 {
       margin-bottom: 2rem; }
 @media only screen and (min-width: 48rem) {
-  .home-content {
-    --percenage-hero-images: 35.5%;
-    /* The percentage of the hero images */ }
-    .home-content .picture-text-box {
-      display: grid;
-      align-items: center; }
-      .home-content .picture-text-box picture {
-        grid-area: image; }
-      .home-content .picture-text-box .text-box-content {
-        grid-area: text;
-        row-gap: 0;
-        width: auto;
-        margin: 0;
-        padding: 0rem 6rem; }
-        .home-content .picture-text-box .text-box-content .heading-2 {
-          margin-bottom: 2rem; }
-        .home-content .picture-text-box .text-box-content .default-paragraph {
-          margin-bottom: 5rem; }
-    .home-content .picture-text-box:nth-child(odd) {
-      grid-template-columns: 1fr var(--percenage-hero-images);
-      grid-template-areas: "text image"; }
-    .home-content .picture-text-box:nth-child(even) {
-      grid-template-columns: var(--percenage-hero-images) 1fr;
-      grid-template-areas: "image text"; }
-    .home-content .home-features {
-      align-items: center; }
-      .home-content .home-features .home-feature {
-        width: 65%; } }
+  .home-content .home-features {
+    align-items: center; }
+    .home-content .home-features .home-feature {
+      width: 65%; } }
 @media only screen and (min-width: 90em) {
-  .home-content {
-    --percenage-hero-images: 57.6%; }
-    .home-content .picture-text-box .text-box-content {
-      padding: 0rem 12rem; }
-    .home-content .home-features {
-      align-items: normal;
-      flex-direction: row;
-      row-gap: 0;
-      column-gap: 4rem;
-      justify-content: space-between;
-      padding: 11.5rem 17rem; }
-      .home-content .home-features .home-feature {
-        grid-template-columns: auto;
-        grid-template-rows: 11rem auto auto; }
-        .home-content .home-features .home-feature img {
-          margin-bottom: 0; }
-    .home-content .gallery-item:nth-child(1) {
-      background-image: url("../assets/stories/desktop/mountains.jpg"); }
-    .home-content .gallery-item:nth-child(2) {
-      background-image: url("../assets/stories/desktop/cityscapes.jpg"); }
-    .home-content .gallery-item:nth-child(3) {
-      background-image: url("../assets/stories/desktop/18-days-voyage.jpg"); }
-    .home-content .gallery-item:nth-child(4) {
-      background-image: url("../assets/stories/desktop/architecturals.jpg"); } }
+  .home-content .home-features {
+    align-items: normal;
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 4rem;
+    justify-content: space-between;
+    padding: 11.5rem 17rem; }
+    .home-content .home-features .home-feature {
+      grid-template-columns: auto;
+      grid-template-rows: 11rem auto auto; }
+      .home-content .home-features .home-feature img {
+        margin-bottom: 0; }
+  .home-content .gallery-item:nth-child(1) {
+    background-image: url("../assets/stories/desktop/mountains.jpg"); }
+  .home-content .gallery-item:nth-child(2) {
+    background-image: url("../assets/stories/desktop/cityscapes.jpg"); }
+  .home-content .gallery-item:nth-child(3) {
+    background-image: url("../assets/stories/desktop/18-days-voyage.jpg"); }
+  .home-content .gallery-item:nth-child(4) {
+    background-image: url("../assets/stories/desktop/architecturals.jpg"); } }
 
 .stories-content .stories-hero::before {
   content: "";

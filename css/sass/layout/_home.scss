@@ -1,33 +1,6 @@
 .home-content {
-    .picture-text-box {
-        .text-box-content {
-            width: 85%;
-            margin: 0 auto;
-            display: grid;
-            justify-items: start;
-            row-gap: 2rem;
-            padding: 7rem 0;
-        }
-    }
-
-    .picture-text-box:nth-child(odd) {
-        background-color: var(--black);
-        color: var(--white);
-    }
-
-    .picture-text-box:nth-child(even) {
-        background-color: var(--white);
-        color: var(--black);
-    }
-
     .arrow-button {
         font-size: 1.2rem;
-    }
-
-    picture {
-        img {
-            width: 100%;
-        }
     }
 
     .gallery-item:nth-child(1) {
@@ -69,42 +42,6 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        --percenage-hero-images: 35.5%; /* The percentage of the hero images */
-
-        .picture-text-box {
-            display: grid;
-            align-items: center;
-
-            picture {
-                grid-area: image;
-            }
-
-            .text-box-content {
-                grid-area: text;
-                row-gap: 0;
-                width: auto;
-                margin: 0;
-                padding: 0rem 6rem;
-                .heading-2 {
-                    margin-bottom: 2rem;
-                }
-
-                .default-paragraph {
-                    margin-bottom: 5rem;
-                }
-            }
-        }
-
-        .picture-text-box:nth-child(odd) {
-            grid-template-columns: 1fr var(--percenage-hero-images);
-            grid-template-areas: "text image";
-        }
-
-        .picture-text-box:nth-child(even) {
-            grid-template-columns: var(--percenage-hero-images) 1fr;
-            grid-template-areas: "image text";
-        }
-
         .home-features {
             align-items: center;
             .home-feature {
@@ -114,13 +51,6 @@
     }
 
     @media only screen and (min-width: $minWidthDesktop) {
-        --percenage-hero-images: 57.6%;
-        .picture-text-box {
-            .text-box-content {
-                padding: 0rem 12rem;
-            }
-        }
-
         .home-features {
             align-items: normal;
             flex-direction: row;
