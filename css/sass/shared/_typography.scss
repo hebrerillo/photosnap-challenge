@@ -11,6 +11,13 @@
     font-weight: 700;
 }
 
+.heading-6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 .default-paragraph {
     opacity: 0.6;
     font-size: 1.5rem;
@@ -36,6 +43,11 @@
 
 .nav-link:hover {
     opacity: 0.3;
+}
+
+.story-date, .story-author {
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 /** GALLERY STYLES **/
