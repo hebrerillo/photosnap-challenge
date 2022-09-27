@@ -7,7 +7,7 @@
             background-image: url('../assets/stories/mobile/moon-of-appalacia.jpg');
             background-size: cover;
         }
-        
+
         .stories-hero__text {
             background-color: var(--black);
             color: var(--white);
@@ -23,6 +23,27 @@
                 margin-bottom: 3rem;
                 .story-date {
                     opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+        .stories-hero {
+            display: flex;
+            align-items: center;
+            background-image: url('../assets/stories/tablet/moon-of-appalacia.jpg');
+            background-size: cover;
+            height: 84vw;
+
+            &::before {
+                display: none;
+            }
+            .stories-hero__text {
+                background-color: transparent;
+                padding: 0 3rem;
+                .default-paragraph {
+                    width: 39rem;
                 }
             }
         }

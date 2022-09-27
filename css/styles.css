@@ -427,6 +427,20 @@ button {
     margin-bottom: 3rem; }
     .stories-content .stories-hero .stories-hero__text .hero-details .story-date {
       opacity: 0.7; }
+@media only screen and (min-width: 48rem) {
+  .stories-content .stories-hero {
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/stories/tablet/moon-of-appalacia.jpg");
+    background-size: cover;
+    height: 84vw; }
+    .stories-content .stories-hero::before {
+      display: none; }
+    .stories-content .stories-hero .stories-hero__text {
+      background-color: transparent;
+      padding: 0 3rem; }
+      .stories-content .stories-hero .stories-hero__text .default-paragraph {
+        width: 39rem; } }
 
 .main-footer {
   display: grid;
