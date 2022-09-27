@@ -28,6 +28,57 @@
         }
     }
 
+    .gallery {
+        .gallery-item:nth-child(1) {
+            background-image: url('../assets/stories/mobile/mountains.jpg');
+        }
+        .gallery-item:nth-child(2) {
+            background-image: url('../assets/stories/mobile/cityscapes.jpg');
+        }
+        .gallery-item:nth-child(3) {
+            background-image: url('../assets/stories/mobile/18-days-voyage.jpg');
+        }
+        .gallery-item:nth-child(4) {
+            background-image: url('../assets/stories/mobile/architecturals.jpg');
+        }
+        .gallery-item:nth-child(5) {
+            background-image: url('../assets/stories/mobile/world-tour.jpg');
+        }
+        .gallery-item:nth-child(6) {
+            background-image: url('../assets/stories/mobile/unforeseen-corners.jpg');
+        }
+        .gallery-item:nth-child(7) {
+            background-image: url('../assets/stories/mobile/king-on-africa.jpg');
+        }
+        .gallery-item:nth-child(8) {
+            background-image: url('../assets/stories/mobile/trip-to-nowhere.jpg');
+        }
+        .gallery-item:nth-child(9) {
+            background-image: url('../assets/stories/mobile/rage-of-the-sea.jpg');
+        }
+        .gallery-item:nth-child(10) {
+            background-image: url('../assets/stories/mobile/running-free.jpg');
+        }
+        .gallery-item:nth-child(11) {
+            background-image: url('../assets/stories/mobile/behind-the-waves.jpg');
+        }
+        .gallery-item:nth-child(12) {
+            background-image: url('../assets/stories/mobile/calm-waters.jpg');
+        }
+        .gallery-item:nth-child(13) {
+            background-image: url('../assets/stories/mobile/milky-way.jpg');
+        }
+        .gallery-item:nth-child(14) {
+            background-image: url('../assets/stories/mobile/dark-forest.jpg');
+        }
+        .gallery-item:nth-child(15) {
+            background-image: url('../assets/stories/mobile/somwarpet.jpg');
+        }
+        .gallery-item:nth-child(16) {
+            background-image: url('../assets/stories/mobile/land-of-dreams.jpg');
+        }
+    }
+
     @media only screen and (min-width: $minWidthTabletPortrait) {
         .stories-hero {
             display: flex;
@@ -45,6 +96,57 @@
                 .default-paragraph {
                     width: 39rem;
                 }
+            }
+        }
+
+        .gallery {
+            .gallery-item:nth-child(1) {
+                background-image: url('../assets/stories/desktop/mountains.jpg');
+            }
+            .gallery-item:nth-child(2) {
+                background-image: url('../assets/stories/desktop/cityscapes.jpg');
+            }
+            .gallery-item:nth-child(3) {
+                background-image: url('../assets/stories/desktop/18-days-voyage.jpg');
+            }
+            .gallery-item:nth-child(4) {
+                background-image: url('../assets/stories/desktop/architecturals.jpg');
+            }
+            .gallery-item:nth-child(5) {
+                background-image: url('../assets/stories/desktop/world-tour.jpg');
+            }
+            .gallery-item:nth-child(6) {
+                background-image: url('../assets/stories/desktop/unforeseen-corners.jpg');
+            }
+            .gallery-item:nth-child(7) {
+                background-image: url('../assets/stories/desktop/king-on-africa.jpg');
+            }
+            .gallery-item:nth-child(8) {
+                background-image: url('../assets/stories/desktop/trip-to-nowhere.jpg');
+            }
+            .gallery-item:nth-child(9) {
+                background-image: url('../assets/stories/desktop/rage-of-the-sea.jpg');
+            }
+            .gallery-item:nth-child(10) {
+                background-image: url('../assets/stories/desktop/running-free.jpg');
+            }
+            .gallery-item:nth-child(11) {
+                background-image: url('../assets/stories/desktop/behind-the-waves.jpg');
+            }
+            .gallery-item:nth-child(12) {
+                background-image: url('../assets/stories/desktop/calm-waters.jpg');
+            }
+            .gallery-item:nth-child(13) {
+                background-image: url('../assets/stories/desktop/milky-way.jpg');
+            }
+            .gallery-item:nth-child(14) {
+                background-image: url('../assets/stories/desktop/dark-forest.jpg');
+            }
+            .gallery-item:nth-child(15) {
+                background-image: url('../assets/stories/desktop/somwarpet.jpg');
+            }
+            .gallery-item:nth-child(16) {
+                background-image: url('../assets/stories/desktop/land-of-dreams.jpg');
             }
         }
     }
