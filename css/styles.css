@@ -1,6 +1,7 @@
 :root {
   --logo-width: 17rem;
   --default-transition-time: 0.3s;
+  --common-horizontal-padding: 3rem;
   /** COLORS **/
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -541,6 +542,27 @@ button {
 
 .features-content .picture-text-box--hero .text-box-content .default-paragraph {
   margin-bottom: 0; }
+.features-content .beta-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 4.5rem var(--common-horizontal-padding);
+  color: var(--white);
+  background-image: url("../assets/shared/mobile/bg-beta.jpg");
+  background-size: cover; }
+  .features-content .beta-section::before {
+    left: var(--common-horizontal-padding); }
+@media only screen and (min-width: 48rem) {
+  .features-content .beta-section {
+    background-image: url("../assets/shared/tablet/bg-beta.jpg");
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7.4rem var(--common-horizontal-padding); }
+    .features-content .beta-section:before {
+      left: 0; } }
+@media only screen and (min-width: 48rem) {
+  .features-content .beta-section {
+    background-image: url("../assets/shared/desktop/bg-beta.jpg"); } }
 
 .main-footer {
   display: grid;
