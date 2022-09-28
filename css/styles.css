@@ -272,6 +272,39 @@ button {
     --percenage-hero-images: 57.6%; }
     .picture-text-box .text-box-content {
       padding: 0rem 12rem; } }
+.features-container {
+  display: grid;
+  row-gap: 5.5rem;
+  padding: 8rem 4rem; }
+  .features-container .feature {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: start;
+    text-align: center; }
+    .features-container .feature img {
+      margin-bottom: 4rem; }
+    .features-container .feature .heading-5 {
+      margin-bottom: 2rem; }
+  @media only screen and (min-width: 48rem) {
+    .features-container {
+      grid-template-columns: repeat(2, minmax(auto, 60rem));
+      justify-content: space-between;
+      column-gap: 1.5rem;
+      row-gap: 7rem; }
+      .features-container .feature {
+        grid-template-columns: auto;
+        grid-template-rows: 11rem auto auto; }
+        .features-container .feature img {
+          margin-bottom: 0; } }
+  @media only screen and (min-width: 90em) {
+    .features-container {
+      grid-template-columns: repeat(3, minmax(auto, 50rem));
+      align-items: normal;
+      column-gap: 2rem;
+      row-gap: 10rem;
+      padding: 11.5rem 17rem; } }
+
 .main-header .header__nav {
   display: none;
   grid-template-rows: auto auto 1fr;
@@ -373,39 +406,18 @@ button {
   background-image: url("../assets/stories/mobile/18-days-voyage.jpg"); }
 .home-content .gallery-item:nth-child(4) {
   background-image: url("../assets/stories/mobile/architecturals.jpg"); }
-.home-content .home-features {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5.5rem;
-  padding: 8rem 4rem; }
-  .home-content .home-features .home-feature {
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    align-content: start;
-    text-align: center; }
-    .home-content .home-features .home-feature img {
-      margin-bottom: 4rem; }
-    .home-content .home-features .home-feature .heading-5 {
-      margin-bottom: 2rem; }
 @media only screen and (min-width: 48rem) {
-  .home-content .home-features {
-    align-items: center; }
-    .home-content .home-features .home-feature {
-      width: 65%; } }
+  .home-content .features-container {
+    grid-template-columns: 68%;
+    justify-content: center; }
+    .home-content .features-container .feature {
+      align-items: center; } }
 @media only screen and (min-width: 90em) {
-  .home-content .home-features {
-    align-items: normal;
-    flex-direction: row;
-    row-gap: 0;
-    column-gap: 4rem;
-    justify-content: space-between;
-    padding: 11.5rem 17rem; }
-    .home-content .home-features .home-feature {
-      grid-template-columns: auto;
-      grid-template-rows: 11rem auto auto; }
-      .home-content .home-features .home-feature img {
-        margin-bottom: 0; }
+  .home-content .features-container {
+    grid-template-columns: repeat(3, minmax(auto, 50rem));
+    justify-content: space-between; }
+    .home-content .features-container .feature {
+      align-items: normal; }
   .home-content .gallery-item:nth-child(1) {
     background-image: url("../assets/stories/desktop/mountains.jpg"); }
   .home-content .gallery-item:nth-child(2) {

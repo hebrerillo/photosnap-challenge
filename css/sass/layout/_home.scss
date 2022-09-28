@@ -19,55 +19,26 @@
         background-image: url('../assets/stories/mobile/architecturals.jpg');
     }
 
-    .home-features {
-        display: flex;
-        flex-direction: column;
-        row-gap: 5.5rem;
-        padding: 8rem 4rem;
-
-        .home-feature {
-            display: grid;
-            justify-items: center;
-            justify-content: center;
-            align-content: start;
-            text-align: center;
-            img {
-                margin-bottom: 4rem;
-            }
-
-            .heading-5 {
-                margin-bottom: 2rem;
-            }
-        }
-    }
-
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        .home-features {
-            align-items: center;
-            .home-feature {
-                width: 65%;
+        .features-container {
+            grid-template-columns: 68%;
+            justify-content: center;
+            .feature {
+                align-items: center;
             }
         }
     }
 
     @media only screen and (min-width: $minWidthDesktop) {
-        .home-features {
-            align-items: normal;
-            flex-direction: row;
-            row-gap: 0;
-            column-gap: 4rem;
-            justify-content: space-between;
-            padding: 11.5rem 17rem;
 
-            .home-feature {
-                grid-template-columns: auto;
-                grid-template-rows: 11rem auto auto;
-                img {
-                    margin-bottom: 0;
-                }
+        .features-container {
+            grid-template-columns: repeat(3, minmax(auto, 50rem));
+            justify-content: space-between;
+            .feature {
+                align-items: normal;
             }
         }
-
+        
         .gallery-item:nth-child(1) {
             background-image: url('../assets/stories/desktop/mountains.jpg');
         }
