@@ -59,3 +59,15 @@ button {
     margin: 0 auto;
     position: relative;
 }
+
+@media only screen and (min-width: $minWidthTabletPortrait) {
+    :root {
+        --common-horizontal-padding: 4rem;
+    }
+}
+
+@media only screen and (min-width: $minWidthDesktop) {
+    :root {
+        --common-horizontal-padding: 17rem;
+    }
+}

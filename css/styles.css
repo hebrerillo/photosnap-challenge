@@ -51,6 +51,12 @@ button {
   margin: 0 auto;
   position: relative; }
 
+@media only screen and (min-width: 48rem) {
+  :root {
+    --common-horizontal-padding: 4rem; } }
+@media only screen and (min-width: 90em) {
+  :root {
+    --common-horizontal-padding: 17rem; } }
 .logo {
   width: var(--logo-width);
   height: 1.6rem; }
@@ -567,7 +573,7 @@ button {
     opacity: 0.5; }
   @media only screen and (min-width: 48rem) {
     .main-footer {
-      padding: 5.5rem 4rem;
+      padding: 5.5rem var(--common-horizontal-padding);
       justify-items: normal;
       align-items: center;
       justify-items: start;
@@ -595,7 +601,7 @@ button {
         margin-bottom: 3rem; } }
   @media only screen and (min-width: 90em) {
     .main-footer {
-      padding: 5.5rem 17rem;
+      padding: 5.5rem var(--common-horizontal-padding);
       align-items: start;
       column-gap: 11rem;
       grid-template-columns: auto 1fr auto;

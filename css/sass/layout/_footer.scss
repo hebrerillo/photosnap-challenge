@@ -44,7 +44,7 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        padding: 5.5rem 4rem;
+        padding: 5.5rem var(--common-horizontal-padding);
         justify-items: normal;
         align-items: center;
         justify-items: start;
@@ -90,7 +90,7 @@
     }
 
     @media only screen and (min-width: $minWidthDesktop) {
-        padding: 5.5rem 17rem;
+        padding: 5.5rem var(--common-horizontal-padding);
         align-items: start;
         column-gap: 11rem;
         grid-template-columns: auto 1fr auto;
