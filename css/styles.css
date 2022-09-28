@@ -303,7 +303,9 @@ button {
       align-items: normal;
       column-gap: 2rem;
       row-gap: 10rem;
-      padding: 11.5rem 17rem; } }
+      padding: 11.5rem 17rem; }
+      .features-container .feature {
+        align-items: normal; } }
 
 .main-header .header__nav {
   display: none;
@@ -415,7 +417,10 @@ button {
 @media only screen and (min-width: 90em) {
   .home-content .features-container {
     grid-template-columns: repeat(3, minmax(auto, 50rem));
-    justify-content: space-between; }
+    align-items: normal;
+    column-gap: 2rem;
+    row-gap: 10rem;
+    padding: 11.5rem 17rem; }
     .home-content .features-container .feature {
       align-items: normal; }
   .home-content .gallery-item:nth-child(1) {

@@ -32,11 +32,7 @@
     @media only screen and (min-width: $minWidthDesktop) {
 
         .features-container {
-            grid-template-columns: repeat(3, minmax(auto, 50rem));
-            justify-content: space-between;
-            .feature {
-                align-items: normal;
-            }
+            @include features-desktop;
         }
         
         .gallery-item:nth-child(1) {
