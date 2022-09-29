@@ -16,6 +16,19 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 4.5rem;
+
+            .heading-5::before {
+                content: attr(data-plan);
+                display: block;
+                font-weight: 700;
+                height: 0;
+                visibility: hidden;
+            }
+            
+            .heading-5.yearly {
+                font-weight: 400;
+            }
+            
             .pricing-toggler {
                 .toggler-box {
                     cursor: pointer;
@@ -52,6 +65,14 @@
         }
 
         .pricing-period-selection.yearly {
+            .heading-5.monthly {
+                font-weight: 400;
+            }
+            
+            .heading-5.yearly {
+                font-weight: 700;
+            }
+            
             .pricing-toggler .toggler-box .black-layer{
                 transform: translateX(0px);
                 background-color: var(--black);
