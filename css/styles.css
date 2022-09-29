@@ -402,6 +402,9 @@ button {
           font-size: 1.2rem; }
       .main-header .header__nav .header__nav_background {
         display: none; } }
+@media only screen and (min-width: 90em) {
+  .main-header {
+    padding: 0 16rem; } }
 @media only screen and (min-width: 112.5em) {
   .main-header {
     padding: 0; } }
@@ -563,6 +566,9 @@ button {
 @media only screen and (min-width: 48rem) {
   .features-content .beta-section {
     background-image: url("../assets/shared/desktop/bg-beta.jpg"); } }
+
+.pricing-content .picture-text-box--hero .text-box-content .default-paragraph {
+  margin-bottom: 0; }
 
 .main-footer {
   display: grid;
