@@ -127,6 +127,10 @@
                 background-color: var(--black);
                 color: var(--white);
             }
+            
+            .plan-box.content-with-gradient::before {
+                width: 100%;
+            }
         }
     }
 }

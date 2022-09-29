@@ -7,8 +7,12 @@
     background-color: var(--black);
     color: var(--white);
 }
+.button--2 {
+    background-color: var(--white);
+    color: var(--black);
+}
 
-.button--1:hover {
+.button--1:hover, .button--2:hover {
     background-color: var(--light-grey);
     color: var(--black);
 }

@@ -102,7 +102,11 @@ button {
   background-color: var(--black);
   color: var(--white); }
 
-.button--1:hover {
+.button--2 {
+  background-color: var(--white);
+  color: var(--black); }
+
+.button--1:hover, .button--2:hover {
   background-color: var(--light-grey);
   color: var(--black); }
 
@@ -145,11 +149,9 @@ button {
   font-size: 1.5rem;
   line-height: 1.7; }
 
-.arrow-button {
+.arrow-button, .button {
   letter-spacing: 2px;
-  font-size: 1.2rem; }
-
-.button, .arrow-button {
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 700; }
 
@@ -661,6 +663,8 @@ button {
     .pricing-content .plans .plans-boxes .plan-box:nth-child(even) {
       background-color: var(--black);
       color: var(--white); }
+    .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
+      width: 100%; }
 
 .main-footer {
   display: grid;
