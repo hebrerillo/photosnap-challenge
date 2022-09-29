@@ -64,24 +64,6 @@
             }
         }
 
-        .pricing-period-selection.yearly {
-            .heading-5.monthly {
-                font-weight: 400;
-            }
-
-            .heading-5.yearly {
-                font-weight: 700;
-            }
-
-            .pricing-toggler .toggler-box .black-layer{
-                transform: translateX(0px);
-                background-color: var(--black);
-                .bullet {
-                    background-color: var(--white);
-                }
-            }
-        }
-
         .plans-boxes {
             display: flex;
             flex-direction: column;
@@ -112,7 +94,7 @@
                         margin-bottom: 0;
                     }
                 }
-                
+
                 .button {
                     justify-self: stretch;
                 }
@@ -127,10 +109,43 @@
                 background-color: var(--black);
                 color: var(--white);
             }
-            
+
             .plan-box.content-with-gradient::before {
                 width: 100%;
             }
         }
+        
+        [data-yearly-data] {
+            display: none;
+        }
     }
+
+    .plans.yearly {
+        .pricing-period-selection {
+            .heading-5.monthly {
+                font-weight: 400;
+            }
+
+            .heading-5.yearly {
+                font-weight: 700;
+            }
+
+            .pricing-toggler .toggler-box .black-layer{
+                transform: translateX(0px);
+                background-color: var(--black);
+                .bullet {
+                    background-color: var(--white);
+                }
+            }
+        }
+        
+        [data-yearly-data] {
+            display: block;
+        }
+        
+        [data-monthly-data] {
+            display: none;
+        }
+    }
+
 }

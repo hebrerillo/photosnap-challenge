@@ -33,7 +33,7 @@ class App
      */
     togglePrice()
     {
-        this.togglePriceBox.closest('.pricing-period-selection').classList.toggle('yearly');
+        this.togglePriceBox.closest('.plans').classList.toggle('yearly');
     }
     
     /**

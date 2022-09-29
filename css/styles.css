@@ -623,15 +623,6 @@ button {
           border-radius: 50%;
           background-color: var(--black);
           transition: all var(--default-transition-time); }
-  .pricing-content .plans .pricing-period-selection.yearly .heading-5.monthly {
-    font-weight: 400; }
-  .pricing-content .plans .pricing-period-selection.yearly .heading-5.yearly {
-    font-weight: 700; }
-  .pricing-content .plans .pricing-period-selection.yearly .pricing-toggler .toggler-box .black-layer {
-    transform: translateX(0px);
-    background-color: var(--black); }
-    .pricing-content .plans .pricing-period-selection.yearly .pricing-toggler .toggler-box .black-layer .bullet {
-      background-color: var(--white); }
   .pricing-content .plans .plans-boxes {
     display: flex;
     flex-direction: column;
@@ -665,6 +656,21 @@ button {
       color: var(--white); }
     .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
       width: 100%; }
+  .pricing-content .plans [data-yearly-data] {
+    display: none; }
+.pricing-content .plans.yearly .pricing-period-selection .heading-5.monthly {
+  font-weight: 400; }
+.pricing-content .plans.yearly .pricing-period-selection .heading-5.yearly {
+  font-weight: 700; }
+.pricing-content .plans.yearly .pricing-period-selection .pricing-toggler .toggler-box .black-layer {
+  transform: translateX(0px);
+  background-color: var(--black); }
+  .pricing-content .plans.yearly .pricing-period-selection .pricing-toggler .toggler-box .black-layer .bullet {
+    background-color: var(--white); }
+.pricing-content .plans.yearly [data-yearly-data] {
+  display: block; }
+.pricing-content .plans.yearly [data-monthly-data] {
+  display: none; }
 
 .main-footer {
   display: grid;
