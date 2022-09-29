@@ -674,14 +674,14 @@ button {
   display: none; }
 @media only screen and (min-width: 48rem) {
   .pricing-content .plans .plans-boxes .plan-box {
-    grid-template-columns: minmax(27rem, 45rem) 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "heading       price" "paragraph     price" "button        price";
     justify-content: space-between;
     align-items: start;
     padding: 4rem;
-    column-gap: 17rem;
-    max-width: 85rem;
+    column-gap: 7rem;
+    max-width: 90rem;
     justify-items: start; }
     .pricing-content .plans .plans-boxes .plan-box .heading-3, .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
       margin-bottom: 2.5rem; }
@@ -696,7 +696,8 @@ button {
       grid-area: price;
       margin-bottom: 0;
       margin-top: .7rem;
-      align-items: end; }
+      align-items: end;
+      justify-self: end; }
   .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
     width: var(--vertical-gradient-width); } }
 

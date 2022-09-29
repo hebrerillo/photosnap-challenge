@@ -152,7 +152,7 @@
         .plans {
             .plans-boxes{
                 .plan-box {
-                    grid-template-columns: minmax(27rem, 45rem) 1fr;
+                    grid-template-columns: 1fr 1fr;
                     grid-template-rows: repeat(3, auto);
                     grid-template-areas: "heading       price"
                         "paragraph     price"
@@ -160,8 +160,8 @@
                     justify-content: space-between;
                     align-items: start;
                     padding: 4rem;
-                    column-gap: 17rem;
-                    max-width: 85rem;
+                    column-gap: 7rem;
+                    max-width: 90rem;
                     justify-items: start;
 
                     .heading-3, .default-paragraph {
@@ -186,6 +186,7 @@
                         margin-bottom: 0;
                         margin-top: .7rem;
                         align-items: end;
+                        justify-self: end;
                     }
                 }
                 
