@@ -4,12 +4,14 @@ class App
     #openMenu;
     #closeMenu;
     #menuBackground;
+    #togglePriceBox;
     constructor()
     {
         this.#mainHeader = document.querySelector('.main-header');
         this.#openMenu = this.#mainHeader.querySelector('.open-menu');
         this.#closeMenu = this.#mainHeader.querySelector('.close-menu');
-        this.#menuBackground = this.#mainHeader.querySelector('.header__nav_background')
+        this.#menuBackground = this.#mainHeader.querySelector('.header__nav_background');
+        this.togglePriceBox = document.querySelector('.toggler-box');
         this.setEvents();
     }
     
@@ -22,6 +24,16 @@ class App
         [this.#closeMenu, this.#menuBackground].forEach(closeMenuItem => {
             closeMenuItem.addEventListener('click', this.closeNavigationMenu.bind(this));
         });
+        
+        this.togglePriceBox.addEventListener('click', this.togglePrice.bind(this));
+    }
+
+    /**
+     * Toggles between monthly and yearly plans.
+     */
+    togglePrice()
+    {
+        this.togglePriceBox.closest('.pricing-period-selection').classList.toggle('yearly');
     }
     
     /**

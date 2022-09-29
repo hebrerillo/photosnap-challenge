@@ -2,4 +2,63 @@
     .picture-text-box--hero .text-box-content .default-paragraph{
         margin-bottom: 0;
     }
+
+    .plans {
+        padding-top: 6rem;
+        --width-toggler-box: 6.4rem;
+        --padding-toggler-box: 0.3rem;
+        --width-toggler-bullet: 2.4rem;
+        --horizontal-offset-black-box: calc((var(--width-toggler-box) - var(--padding-toggler-box)*2 - var(--width-toggler-bullet)) * -1);
+        
+        .pricing-period-selection {
+            display: flex;
+            column-gap: 3rem;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4.5rem;
+            .pricing-toggler {
+                .toggler-box {
+                    cursor: pointer;
+                    background-color: var(--light-grey);
+                    width: 6.4rem;
+                    height: 3.2rem;
+                    border-radius: 200px;
+                    position: relative;
+                    overflow: hidden;
+                    .black-layer {
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+                        border-radius: 200px;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        padding: 0.3rem;
+                        transform: translateX(var(--horizontal-offset-black-box));
+                        transition: all var(--default-transition-time);
+
+                        .bullet {
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            border-radius: 50%;
+                            background-color: var(--black);
+                            transition: all var(--default-transition-time);
+                        }
+                    }
+                }
+            }
+        }
+
+        .pricing-period-selection.yearly {
+            .pricing-toggler .toggler-box .black-layer{
+                transform: translateX(0px);
+                background-color: var(--black);
+                .bullet {
+                    background-color: var(--white);
+                }
+            }
+        }
+    }
 }
