@@ -22,7 +22,7 @@
 
 @media only screen and (min-width: $minWidthTabletPortrait) {
     .content-with-gradient::before {
-        width: 0.6rem;
+        width: var(--vertical-gradient-width);
         height: 100%;
         background-image: var(--default-vertical-linear-gradient);
     }

@@ -2,6 +2,7 @@
   --logo-width: 17rem;
   --default-transition-time: 0.3s;
   --common-horizontal-padding: 3rem;
+  --vertical-gradient-width: 0.6rem;
   /** COLORS **/
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -79,7 +80,7 @@ button {
 
 @media only screen and (min-width: 48rem) {
   .content-with-gradient::before {
-    width: 0.6rem;
+    width: var(--vertical-gradient-width);
     height: 100%;
     background-image: var(--default-vertical-linear-gradient); } }
 /**
@@ -671,6 +672,33 @@ button {
   display: block; }
 .pricing-content .plans.yearly [data-monthly-data] {
   display: none; }
+@media only screen and (min-width: 48rem) {
+  .pricing-content .plans .plans-boxes .plan-box {
+    grid-template-columns: minmax(27rem, 45rem) 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "heading       price" "paragraph     price" "button        price";
+    justify-content: space-between;
+    align-items: start;
+    padding: 4rem;
+    column-gap: 17rem;
+    max-width: 85rem;
+    justify-items: start; }
+    .pricing-content .plans .plans-boxes .plan-box .heading-3, .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
+      margin-bottom: 2.5rem; }
+    .pricing-content .plans .plans-boxes .plan-box .heading-3 {
+      grid-area: heading; }
+    .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
+      grid-area: paragraph;
+      text-align: left; }
+    .pricing-content .plans .plans-boxes .plan-box .button {
+      grid-area: button; }
+    .pricing-content .plans .plans-boxes .plan-box .price-details {
+      grid-area: price;
+      margin-bottom: 0;
+      margin-top: .7rem;
+      align-items: end; }
+  .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
+    width: var(--vertical-gradient-width); } }
 
 .main-footer {
   display: grid;

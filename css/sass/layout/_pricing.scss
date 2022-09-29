@@ -114,7 +114,7 @@
                 width: 100%;
             }
         }
-        
+
         [data-yearly-data] {
             display: none;
         }
@@ -138,14 +138,61 @@
                 }
             }
         }
-        
+
         [data-yearly-data] {
             display: block;
         }
-        
+
         [data-monthly-data] {
             display: none;
         }
     }
 
+    @media only screen and (min-width: $minWidthTabletPortrait) {
+        .plans {
+            .plans-boxes{
+                .plan-box {
+                    grid-template-columns: minmax(27rem, 45rem) 1fr;
+                    grid-template-rows: repeat(3, auto);
+                    grid-template-areas: "heading       price"
+                        "paragraph     price"
+                        "button        price";
+                    justify-content: space-between;
+                    align-items: start;
+                    padding: 4rem;
+                    column-gap: 17rem;
+                    max-width: 85rem;
+                    justify-items: start;
+
+                    .heading-3, .default-paragraph {
+                        margin-bottom: 2.5rem;
+                    }
+
+                    .heading-3 {
+                        grid-area: heading;
+                    }
+
+                    .default-paragraph {
+                        grid-area: paragraph;
+                        text-align: left;
+                    }
+
+                    .button {
+                        grid-area: button;
+                    }
+
+                    .price-details {
+                        grid-area: price;
+                        margin-bottom: 0;
+                        margin-top: .7rem;
+                        align-items: end;
+                    }
+                }
+                
+                .plan-box.content-with-gradient::before {
+                    width: var(--vertical-gradient-width);
+                }
+            }
+        }
+    }
 }
