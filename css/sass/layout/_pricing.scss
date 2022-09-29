@@ -9,7 +9,7 @@
         --padding-toggler-box: 0.3rem;
         --width-toggler-bullet: 2.4rem;
         --horizontal-offset-black-box: calc((var(--width-toggler-box) - var(--padding-toggler-box)*2 - var(--width-toggler-bullet)) * -1);
-        
+
         .pricing-period-selection {
             display: flex;
             column-gap: 3rem;
@@ -24,11 +24,11 @@
                 height: 0;
                 visibility: hidden;
             }
-            
+
             .heading-5.yearly {
                 font-weight: 400;
             }
-            
+
             .pricing-toggler {
                 .toggler-box {
                     cursor: pointer;
@@ -68,17 +68,64 @@
             .heading-5.monthly {
                 font-weight: 400;
             }
-            
+
             .heading-5.yearly {
                 font-weight: 700;
             }
-            
+
             .pricing-toggler .toggler-box .black-layer{
                 transform: translateX(0px);
                 background-color: var(--black);
                 .bullet {
                     background-color: var(--white);
                 }
+            }
+        }
+
+        .plans-boxes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            .plan-box {
+                display: grid;
+                justify-items: center;
+                padding: 5.5rem 3rem 3.7rem 3rem;
+                width: 90%;
+                max-width: 45rem;
+
+                .heading-3 {
+                    margin-bottom: 2rem;
+                }
+
+                .default-paragraph {
+                    margin-bottom: 4rem;
+                    text-align: center;
+                }
+
+                .price-details {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 4rem;
+                    .default-paragraph {
+                        margin-bottom: 0;
+                    }
+                }
+                
+                .button {
+                    justify-self: stretch;
+                }
+            }
+
+            .plan-box:nth-child(odd){
+                background-color: var(--grey);
+                color: var(--black);
+            }
+
+            .plan-box:nth-child(even){
+                background-color: var(--black);
+                color: var(--white);
             }
         }
     }

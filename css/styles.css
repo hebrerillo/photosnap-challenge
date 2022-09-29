@@ -6,6 +6,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --light-grey: hsl(0, 0%, 87%);
+  --grey: hsl(0, 0%, 96%);
   --gradient-orange: #FFC593;
   --gradient-purple: #BC7198;
   --gradient-blue: #5A77FF;
@@ -124,6 +125,10 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2; }
+
+.heading-3 {
+  font-size: 2.4rem;
+  font-weight: 700; }
 
 .heading-5 {
   font-size: 1.8rem;
@@ -625,6 +630,37 @@ button {
     background-color: var(--black); }
     .pricing-content .plans .pricing-period-selection.yearly .pricing-toggler .toggler-box .black-layer .bullet {
       background-color: var(--white); }
+  .pricing-content .plans .plans-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; }
+    .pricing-content .plans .plans-boxes .plan-box {
+      display: grid;
+      justify-items: center;
+      padding: 5.5rem 3rem 3.7rem 3rem;
+      width: 90%;
+      max-width: 45rem; }
+      .pricing-content .plans .plans-boxes .plan-box .heading-3 {
+        margin-bottom: 2rem; }
+      .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
+        margin-bottom: 4rem;
+        text-align: center; }
+      .pricing-content .plans .plans-boxes .plan-box .price-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 4rem; }
+        .pricing-content .plans .plans-boxes .plan-box .price-details .default-paragraph {
+          margin-bottom: 0; }
+      .pricing-content .plans .plans-boxes .plan-box .button {
+        justify-self: stretch; }
+    .pricing-content .plans .plans-boxes .plan-box:nth-child(odd) {
+      background-color: var(--grey);
+      color: var(--black); }
+    .pricing-content .plans .plans-boxes .plan-box:nth-child(even) {
+      background-color: var(--black);
+      color: var(--white); }
 
 .main-footer {
   display: grid;
