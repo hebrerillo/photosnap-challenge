@@ -167,8 +167,6 @@
         padding-top: 6rem;
         .heading-2 {
             display: none;
-            text-align: center;
-            margin-bottom: 7rem;
         }
 
         .comparison-table {
@@ -263,6 +261,47 @@
         .plans, .features-comparision {
             padding-left: 3.5rem;
             padding-right: 3.5rem;
+        }
+
+        .features-comparision {
+            padding-top: 12rem;
+            .heading-2 {
+                display: block;
+                text-align: center;
+                margin-bottom: 7rem;
+            }
+
+            .comparison-table {
+                max-width: 73rem;
+                margin: 0 auto;
+                .comparison-table__row.comparison-table__heading {
+                    .heading-6:not(:first-child) {
+                        display: block;
+                    }
+                }
+
+                .comparison-table__row {
+                    grid-template-rows: auto;
+                    grid-template-columns: 1.5fr repeat(3, 1fr);
+                    row-gap: 0;
+                    justify-items: center;
+
+                    .heading-6:first-child {
+                        justify-self: start;
+                    }
+                    
+                    .heading-6 {
+                        grid-column: auto;
+                    }
+                    
+                    .feature-availability {
+                        row-gap: 0;
+                        .subheading-1 {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 

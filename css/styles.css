@@ -687,9 +687,7 @@ button {
 .pricing-content .features-comparision {
   padding-top: 6rem; }
   .pricing-content .features-comparision .heading-2 {
-    display: none;
-    text-align: center;
-    margin-bottom: 7rem; }
+    display: none; }
   .pricing-content .features-comparision .comparison-table .comparison-table__row.comparison-table__heading {
     row-gap: 0;
     padding-top: 0;
@@ -746,7 +744,31 @@ button {
     width: var(--vertical-gradient-width); }
   .pricing-content .plans, .pricing-content .features-comparision {
     padding-left: 3.5rem;
-    padding-right: 3.5rem; } }
+    padding-right: 3.5rem; }
+  .pricing-content .features-comparision {
+    padding-top: 12rem; }
+    .pricing-content .features-comparision .heading-2 {
+      display: block;
+      text-align: center;
+      margin-bottom: 7rem; }
+    .pricing-content .features-comparision .comparison-table {
+      max-width: 73rem;
+      margin: 0 auto; }
+      .pricing-content .features-comparision .comparison-table .comparison-table__row.comparison-table__heading .heading-6:not(:first-child) {
+        display: block; }
+      .pricing-content .features-comparision .comparison-table .comparison-table__row {
+        grid-template-rows: auto;
+        grid-template-columns: 1.5fr repeat(3, 1fr);
+        row-gap: 0;
+        justify-items: center; }
+        .pricing-content .features-comparision .comparison-table .comparison-table__row .heading-6:first-child {
+          justify-self: start; }
+        .pricing-content .features-comparision .comparison-table .comparison-table__row .heading-6 {
+          grid-column: auto; }
+        .pricing-content .features-comparision .comparison-table .comparison-table__row .feature-availability {
+          row-gap: 0; }
+          .pricing-content .features-comparision .comparison-table .comparison-table__row .feature-availability .subheading-1 {
+            display: none; } }
 @media only screen and (min-width: 90em) {
   .pricing-content .plans {
     padding-top: 12rem; }
