@@ -596,7 +596,8 @@ button {
       height: 0;
       visibility: hidden; }
     .pricing-content .plans .pricing-period-selection .heading-5.yearly {
-      font-weight: 400; }
+      font-weight: 400;
+      opacity: 0.6; }
     .pricing-content .plans .pricing-period-selection .pricing-toggler .toggler-box {
       cursor: pointer;
       background-color: var(--light-grey);
@@ -633,22 +634,31 @@ button {
       display: grid;
       justify-items: center;
       padding: 5.5rem 3rem 3.7rem 3rem;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: none;
       width: 90%;
       max-width: 45rem; }
       .pricing-content .plans .plans-boxes .plan-box .heading-3 {
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        grid-area: auto; }
       .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
         margin-bottom: 4rem;
-        text-align: center; }
+        text-align: center;
+        grid-area: auto; }
       .pricing-content .plans .plans-boxes .plan-box .price-details {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 4rem; }
+        align-items: center;
+        margin-bottom: 4rem;
+        grid-area: auto;
+        justify-self: center; }
         .pricing-content .plans .plans-boxes .plan-box .price-details .default-paragraph {
           margin-bottom: 0; }
       .pricing-content .plans .plans-boxes .plan-box .button {
-        justify-self: stretch; }
+        justify-self: stretch;
+        grid-area: auto; }
     .pricing-content .plans .plans-boxes .plan-box:nth-child(odd) {
       background-color: var(--grey);
       color: var(--black); }
@@ -660,9 +670,11 @@ button {
   .pricing-content .plans [data-yearly-data] {
     display: none; }
 .pricing-content .plans.yearly .pricing-period-selection .heading-5.monthly {
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.6; }
 .pricing-content .plans.yearly .pricing-period-selection .heading-5.yearly {
-  font-weight: 700; }
+  font-weight: 700;
+  opacity: 1; }
 .pricing-content .plans.yearly .pricing-period-selection .pricing-toggler .toggler-box .black-layer {
   transform: translateX(0px);
   background-color: var(--black); }
@@ -700,6 +712,49 @@ button {
       justify-self: end; }
   .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
     width: var(--vertical-gradient-width); } }
+@media only screen and (min-width: 90em) {
+  .pricing-content .plans {
+    padding-top: 12rem; }
+    .pricing-content .plans .plans-boxes {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 3rem; }
+      .pricing-content .plans .plans-boxes .plan-box {
+        display: grid;
+        justify-items: center;
+        padding: 5.5rem 3rem 3.7rem 3rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: none;
+        max-width: none;
+        width: 35rem; }
+        .pricing-content .plans .plans-boxes .plan-box .heading-3 {
+          margin-bottom: 2rem;
+          grid-area: auto; }
+        .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
+          margin-bottom: 4rem;
+          text-align: center;
+          grid-area: auto; }
+        .pricing-content .plans .plans-boxes .plan-box .price-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 4rem;
+          grid-area: auto;
+          justify-self: center; }
+          .pricing-content .plans .plans-boxes .plan-box .price-details .default-paragraph {
+            margin-bottom: 0; }
+        .pricing-content .plans .plans-boxes .plan-box .button {
+          justify-self: stretch;
+          grid-area: auto; }
+      .pricing-content .plans .plans-boxes .plan-box.content-with-gradient {
+        padding-top: 9rem;
+        padding-bottom: 7.2rem; }
+        .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
+          width: 100%;
+          height: var(--vertical-gradient-width); } }
 
 .main-footer {
   display: grid;
