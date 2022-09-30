@@ -165,6 +165,7 @@
 
     .features-comparision {
         padding-top: 6rem;
+        padding-bottom: 5.5rem;
         .heading-2 {
             display: none;
         }
@@ -265,6 +266,7 @@
 
         .features-comparision {
             padding-top: 12rem;
+            padding-bottom: 11rem;
             .heading-2 {
                 display: block;
                 text-align: center;
@@ -289,11 +291,11 @@
                     .heading-6:first-child {
                         justify-self: start;
                     }
-                    
+
                     .heading-6 {
                         grid-column: auto;
                     }
-                    
+
                     .feature-availability {
                         row-gap: 0;
                         .subheading-1 {
@@ -333,6 +335,10 @@
         .plans, .features-comparision {
             padding-left: 0rem;
             padding-right: 0rem;
+        }
+
+        .features-comparision {
+            padding-bottom: 15rem;
         }
     }
 }

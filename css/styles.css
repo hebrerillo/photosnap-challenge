@@ -323,6 +323,28 @@ button {
       .features-container .feature {
         align-items: normal; } }
 
+.beta-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 4.5rem var(--common-horizontal-padding);
+  color: var(--white);
+  background-image: url("../assets/shared/mobile/bg-beta.jpg");
+  background-size: cover; }
+  .beta-section::before {
+    left: var(--common-horizontal-padding); }
+
+@media only screen and (min-width: 48rem) {
+  .beta-section {
+    background-image: url("../assets/shared/tablet/bg-beta.jpg");
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7.4rem var(--common-horizontal-padding); }
+    .beta-section:before {
+      left: 0; } }
+@media only screen and (min-width: 48rem) {
+  .beta-section {
+    background-image: url("../assets/shared/desktop/bg-beta.jpg"); } }
 .main-header .header__nav {
   display: none;
   grid-template-rows: auto auto 1fr;
@@ -554,27 +576,6 @@ button {
 
 .features-content .picture-text-box--hero .text-box-content .default-paragraph {
   margin-bottom: 0; }
-.features-content .beta-section {
-  display: flex;
-  flex-direction: column;
-  row-gap: 3rem;
-  padding: 4.5rem var(--common-horizontal-padding);
-  color: var(--white);
-  background-image: url("../assets/shared/mobile/bg-beta.jpg");
-  background-size: cover; }
-  .features-content .beta-section::before {
-    left: var(--common-horizontal-padding); }
-@media only screen and (min-width: 48rem) {
-  .features-content .beta-section {
-    background-image: url("../assets/shared/tablet/bg-beta.jpg");
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 7.4rem var(--common-horizontal-padding); }
-    .features-content .beta-section:before {
-      left: 0; } }
-@media only screen and (min-width: 48rem) {
-  .features-content .beta-section {
-    background-image: url("../assets/shared/desktop/bg-beta.jpg"); } }
 
 .pricing-content .picture-text-box--hero .text-box-content .default-paragraph {
   margin-bottom: 0; }
@@ -685,7 +686,8 @@ button {
 .pricing-content .plans.yearly [data-monthly-data] {
   display: none; }
 .pricing-content .features-comparision {
-  padding-top: 6rem; }
+  padding-top: 6rem;
+  padding-bottom: 5.5rem; }
   .pricing-content .features-comparision .heading-2 {
     display: none; }
   .pricing-content .features-comparision .comparison-table .comparison-table__row.comparison-table__heading {
@@ -746,7 +748,8 @@ button {
     padding-left: 3.5rem;
     padding-right: 3.5rem; }
   .pricing-content .features-comparision {
-    padding-top: 12rem; }
+    padding-top: 12rem;
+    padding-bottom: 11rem; }
     .pricing-content .features-comparision .heading-2 {
       display: block;
       text-align: center;
@@ -814,7 +817,9 @@ button {
           height: var(--vertical-gradient-width); }
   .pricing-content .plans, .pricing-content .features-comparision {
     padding-left: 0rem;
-    padding-right: 0rem; } }
+    padding-right: 0rem; }
+  .pricing-content .features-comparision {
+    padding-bottom: 15rem; } }
 
 .main-footer {
   display: grid;

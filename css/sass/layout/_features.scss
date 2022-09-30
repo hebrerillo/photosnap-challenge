@@ -2,37 +2,4 @@
     .picture-text-box--hero .text-box-content .default-paragraph {
         margin-bottom: 0;
     }
-
-    .beta-section {
-        display: flex;
-        flex-direction: column;
-        row-gap: 3rem;
-        padding: 4.5rem var(--common-horizontal-padding);
-        color: var(--white);
-        background-image: url('../assets/shared/mobile/bg-beta.jpg');
-        background-size: cover;
-
-        &::before {
-            left: var(--common-horizontal-padding);
-        }
-    }
-
-    @media only screen and (min-width: $minWidthTabletPortrait) {
-        .beta-section {
-            background-image: url('../assets/shared/tablet/bg-beta.jpg');
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 7.4rem var(--common-horizontal-padding);
-            
-            &:before {
-                left: 0;
-            }
-        }
-    }
-    
-    @media only screen and (min-width: $minWidthTabletPortrait) {
-        .beta-section {
-            background-image: url('../assets/shared/desktop/bg-beta.jpg');
-        }
-    }
 }
