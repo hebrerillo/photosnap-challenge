@@ -37,7 +37,6 @@
 }
 
 .pricing-content {
-    padding: 0 2.5rem;
     .picture-text-box--hero .text-box-content .default-paragraph{
         margin-bottom: 0;
     }
@@ -164,7 +163,57 @@
         }
     }
 
+    .features-comparision {
+        padding-top: 6rem;
+        .heading-2 {
+            display: none;
+            text-align: center;
+            margin-bottom: 7rem;
+        }
+
+        .comparison-table {
+            .comparison-table__row.comparison-table__heading {
+                row-gap: 0;
+                padding-top: 0;
+                .heading-6:not(:first-child) {
+                    display: none;
+                }
+                border-bottom: 1px solid var(--black);
+            }
+
+            .comparison-table__row {
+                display: grid;
+                row-gap: 2rem;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto auto;
+                padding: 2.5rem 0;
+                border-bottom: 1px solid var(--light-grey);
+
+                .heading-6 {
+                    grid-column: 1/4;
+                }
+
+                .feature-availability {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 1rem;
+                    align-items: start;
+                    img {
+                        width: 1.6rem;
+                        height: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .plans, .features-comparision {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
     @media only screen and (min-width: $minWidthTabletPortrait) {
+        padding: 0 3.5rem;
         .plans {
             .plans-boxes{
                 .plan-box {
@@ -227,7 +276,7 @@
                     max-width: none;
                     width: 35rem;
                 }
-                
+
                 .plan-box.content-with-gradient {
                     padding-top: 9rem;
                     padding-bottom: 7.2rem;
@@ -237,6 +286,10 @@
                     }
                 }
             }
+        }
+        .plans, .features-comparision {
+            padding-left: 0rem;
+            padding-right: 0rem;
         }
     }
 }
