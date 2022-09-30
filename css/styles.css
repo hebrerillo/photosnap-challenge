@@ -717,35 +717,36 @@ button {
   padding-left: 2.5rem;
   padding-right: 2.5rem; }
 @media only screen and (min-width: 48rem) {
-  .pricing-content {
-    padding: 0 3.5rem; }
-    .pricing-content .plans .plans-boxes .plan-box {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: "heading       price" "paragraph     price" "button        price";
-      justify-content: space-between;
-      align-items: start;
-      padding: 4rem;
-      column-gap: 7rem;
-      max-width: 90rem;
-      justify-items: start; }
-      .pricing-content .plans .plans-boxes .plan-box .heading-3, .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
-        margin-bottom: 2.5rem; }
-      .pricing-content .plans .plans-boxes .plan-box .heading-3 {
-        grid-area: heading; }
-      .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
-        grid-area: paragraph;
-        text-align: left; }
-      .pricing-content .plans .plans-boxes .plan-box .button {
-        grid-area: button; }
-      .pricing-content .plans .plans-boxes .plan-box .price-details {
-        grid-area: price;
-        margin-bottom: 0;
-        margin-top: .7rem;
-        align-items: end;
-        justify-self: end; }
-    .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
-      width: var(--vertical-gradient-width); } }
+  .pricing-content .plans .plans-boxes .plan-box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "heading       price" "paragraph     price" "button        price";
+    justify-content: space-between;
+    align-items: start;
+    padding: 4rem;
+    column-gap: 7rem;
+    max-width: 90rem;
+    justify-items: start; }
+    .pricing-content .plans .plans-boxes .plan-box .heading-3, .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
+      margin-bottom: 2.5rem; }
+    .pricing-content .plans .plans-boxes .plan-box .heading-3 {
+      grid-area: heading; }
+    .pricing-content .plans .plans-boxes .plan-box .default-paragraph {
+      grid-area: paragraph;
+      text-align: left; }
+    .pricing-content .plans .plans-boxes .plan-box .button {
+      grid-area: button; }
+    .pricing-content .plans .plans-boxes .plan-box .price-details {
+      grid-area: price;
+      margin-bottom: 0;
+      margin-top: .7rem;
+      align-items: end;
+      justify-self: end; }
+  .pricing-content .plans .plans-boxes .plan-box.content-with-gradient::before {
+    width: var(--vertical-gradient-width); }
+  .pricing-content .plans, .pricing-content .features-comparision {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem; } }
 @media only screen and (min-width: 90em) {
   .pricing-content .plans {
     padding-top: 12rem; }
