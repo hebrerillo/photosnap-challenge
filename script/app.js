@@ -25,7 +25,7 @@ class App
             closeMenuItem.addEventListener('click', this.closeNavigationMenu.bind(this));
         });
         
-        this.togglePriceBox.addEventListener('click', this.togglePrice.bind(this));
+        this.togglePriceBox?.addEventListener('click', this.togglePrice.bind(this));
     }
 
     /**
@@ -33,7 +33,7 @@ class App
      */
     togglePrice()
     {
-        this.togglePriceBox.closest('.plans').classList.toggle('yearly');
+        this.togglePriceBox?.closest('.plans').classList.toggle('yearly');
     }
     
     /**
