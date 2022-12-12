@@ -27,7 +27,7 @@ Users should be able to:
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
 
-[Frontend mentor challenge](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+[Frontend mentor challenge](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW)
 
 ### Screenshot
 
