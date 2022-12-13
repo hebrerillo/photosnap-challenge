@@ -304,7 +304,7 @@ button {
       margin-bottom: 2rem; }
   @media only screen and (min-width: 48rem) {
     .features-container {
-      grid-template-columns: repeat(2, minmax(auto, 60rem));
+      grid-template-columns: repeat(2, auto);
       justify-content: space-between;
       column-gap: 1.5rem;
       row-gap: 7rem; }
@@ -315,7 +315,7 @@ button {
           margin-bottom: 0; } }
   @media only screen and (min-width: 90em) {
     .features-container {
-      grid-template-columns: repeat(3, minmax(auto, 50rem));
+      grid-template-columns: repeat(3, auto);
       align-items: normal;
       column-gap: 2rem;
       row-gap: 10rem;
@@ -457,7 +457,7 @@ button {
       align-items: center; } }
 @media only screen and (min-width: 90em) {
   .home-content .features-container {
-    grid-template-columns: repeat(3, minmax(auto, 50rem));
+    grid-template-columns: repeat(3, auto);
     align-items: normal;
     column-gap: 2rem;
     row-gap: 10rem;

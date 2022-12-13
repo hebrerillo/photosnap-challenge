@@ -1,5 +1,5 @@
 @mixin features-desktop {
-    grid-template-columns: repeat(3, minmax(auto, 50rem));
+    grid-template-columns: repeat(3, auto);
     align-items: normal;
     column-gap: 2rem;
     row-gap: 10rem;
@@ -30,7 +30,7 @@
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
-        grid-template-columns: repeat(2, minmax(auto, 60rem));
+        grid-template-columns: repeat(2, auto);
         justify-content: space-between;
         column-gap: 1.5rem;
         row-gap: 7rem;
