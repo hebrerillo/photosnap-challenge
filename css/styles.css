@@ -293,12 +293,15 @@ button {
   row-gap: 5.5rem;
   padding: 8rem 4rem; }
   .features-container .feature {
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    align-content: start;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
     text-align: center; }
-    .features-container .feature img {
+    .features-container .feature picture {
+      display: flex;
+      justify-content: center;
+      align-items: start;
       margin-bottom: 4rem; }
     .features-container .feature .heading-5 {
       margin-bottom: 2rem; }
@@ -308,15 +311,15 @@ button {
       justify-content: space-between;
       column-gap: 1.5rem;
       row-gap: 7rem; }
-      .features-container .feature {
-        grid-template-rows: 11rem auto auto; }
-        .features-container .feature img {
-          margin-bottom: 0; } }
+      .features-container .feature picture {
+        height: 12.5rem;
+        margin-bottom: 0;
+        align-items: center; } }
   @media only screen and (min-width: 90em) {
     .features-container {
       grid-template-columns: repeat(3, auto);
       align-items: normal;
-      column-gap: 2rem;
+      column-gap: 2.9rem;
       row-gap: 10rem;
       padding: 11.5rem 17rem; }
       .features-container .feature {
@@ -458,7 +461,7 @@ button {
   .home-content .features-container {
     grid-template-columns: repeat(3, auto);
     align-items: normal;
-    column-gap: 2rem;
+    column-gap: 2.9rem;
     row-gap: 10rem;
     padding: 11.5rem 17rem; }
     .home-content .features-container .feature {

@@ -1,7 +1,7 @@
 @mixin features-desktop {
     grid-template-columns: repeat(3, auto);
     align-items: normal;
-    column-gap: 2rem;
+    column-gap: 2.9rem;
     row-gap: 10rem;
     padding: 11.5rem 17rem;
     .feature {
@@ -15,12 +15,15 @@
     padding: 8rem 4rem;
 
     .feature {
-        display: grid;
-        justify-items: center;
-        justify-content: center;
-        align-content: start;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
         text-align: center;
-        img {
+        picture {
+            display: flex;
+            justify-content: center;
+            align-items: start;
             margin-bottom: 4rem;
         }
 
@@ -36,9 +39,10 @@
         row-gap: 7rem;
 
         .feature {
-            grid-template-rows: 11rem auto auto;
-            img {
+            picture {
+                height: 12.5rem;
                 margin-bottom: 0;
+                align-items: center;
             }
         }
     }
