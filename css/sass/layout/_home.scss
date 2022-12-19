@@ -36,10 +36,6 @@
     }
 
     @media only screen and (min-width: $minWidthDesktop) {
-        .features-container {
-            @include features-desktop;
-        }
-        
         .gallery-item:nth-child(1) {
             background-image: url('../assets/stories/desktop/mountains.jpg');
         }

@@ -321,7 +321,6 @@ button {
       align-items: normal;
       column-gap: 2.9rem;
       row-gap: 10rem;
-      padding: 7rem 3rem;
       padding: 11.5rem 17rem; }
       .features-container .feature {
         align-items: normal; } }
@@ -463,13 +462,10 @@ button {
     grid-template-columns: repeat(3, auto);
     align-items: normal;
     column-gap: 2.9rem;
-    row-gap: 10rem;
-    padding: 7rem 3rem; }
+    row-gap: 10rem; }
     .home-content .features-container .feature {
       align-items: normal; } }
 @media only screen and (min-width: 90em) {
-  .home-content .features-container {
-    padding: 11.5rem 17rem; }
   .home-content .gallery-item:nth-child(1) {
     background-image: url("../assets/stories/desktop/mountains.jpg"); }
   .home-content .gallery-item:nth-child(2) {
