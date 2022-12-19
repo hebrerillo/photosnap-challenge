@@ -28,9 +28,14 @@
             }
         }
     }
+    
+    @media only screen and (min-width: $minWidthTabletLandscape) {
+        .features-container {
+            @include features-tablet-landscape;
+        }
+    }
 
     @media only screen and (min-width: $minWidthDesktop) {
-
         .features-container {
             @include features-desktop;
         }

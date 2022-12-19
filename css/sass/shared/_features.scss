@@ -1,12 +1,16 @@
-@mixin features-desktop {
+@mixin features-tablet-landscape {
     grid-template-columns: repeat(3, auto);
     align-items: normal;
     column-gap: 2.9rem;
     row-gap: 10rem;
-    padding: 11.5rem 17rem;
+    padding: 7rem 3rem;
     .feature {
         align-items: normal;
     }
+}
+
+@mixin features-desktop {
+    padding: 11.5rem 17rem;
 }
 
 .features-container {
@@ -48,6 +52,7 @@
     }
 
     @media only screen and (min-width: $minWidthDesktop) {
+        @include features-tablet-landscape;
         @include features-desktop;
     }
 }
