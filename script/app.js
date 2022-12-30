@@ -11,7 +11,7 @@ class App
         this.#openMenu = this.#mainHeader.querySelector('.open-menu');
         this.#closeMenu = this.#mainHeader.querySelector('.close-menu');
         this.#menuBackground = this.#mainHeader.querySelector('.header__nav_background');
-        this.togglePriceBox = document.querySelector('.toggler-box');
+        this.#togglePriceBox = document.querySelector('.toggler-box');
         this.setEvents();
     }
     
@@ -25,7 +25,7 @@ class App
             closeMenuItem.addEventListener('click', this.closeNavigationMenu.bind(this));
         });
         
-        this.togglePriceBox?.addEventListener('click', this.togglePrice.bind(this));
+        this.#togglePriceBox?.addEventListener('click', this.togglePrice.bind(this));
     }
 
     /**
@@ -33,7 +33,7 @@ class App
      */
     togglePrice()
     {
-        this.togglePriceBox?.closest('.plans').classList.toggle('yearly');
+        this.#togglePriceBox?.closest('.plans').classList.toggle('yearly');
     }
     
     /**
