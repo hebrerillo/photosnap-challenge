@@ -13,7 +13,8 @@
   --gradient-blue: #5A77FF;
   --default-horizontal-linear-gradient: linear-gradient(to top right,
       var(--gradient-orange), var(--gradient-purple), var(--gradient-blue));
-  --default-vertical-linear-gradient: linear-gradient(to bottom left, var(--gradient-blue), var(--gradient-purple) 70%, var(--gradient-orange)); }
+  --default-vertical-linear-gradient: linear-gradient(to bottom left, var(--gradient-blue), var(--gradient-purple) 70%, var(--gradient-orange));
+  --background-images-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6)); }
 
 html {
   box-sizing: border-box;
@@ -192,15 +193,14 @@ button {
     min-height: 37.5rem;
     color: var(--white);
     z-index: 2;
-    padding: 4.5rem 3rem;
-    background-size: cover;
-    background-position: center; }
+    padding: 4.5rem 3rem; }
     .gallery .gallery-item::after {
       content: "";
       position: absolute;
       inset: 0;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.6));
-      z-index: -1; }
+      z-index: -1;
+      background-size: cover;
+      background-position: center; }
     .gallery .gallery-item .gallery-item__description {
       display: flex;
       flex-direction: column;
@@ -443,14 +443,14 @@ button {
     padding: 0; } }
 .home-content .arrow-button {
   font-size: 1.2rem; }
-.home-content .gallery-item:nth-child(1) {
-  background-image: url("../assets/stories/mobile/mountains.jpg"); }
-.home-content .gallery-item:nth-child(2) {
-  background-image: url("../assets/stories/mobile/cityscapes.jpg"); }
-.home-content .gallery-item:nth-child(3) {
-  background-image: url("../assets/stories/mobile/18-days-voyage.jpg"); }
-.home-content .gallery-item:nth-child(4) {
-  background-image: url("../assets/stories/mobile/architecturals.jpg"); }
+.home-content .gallery-item:nth-child(1)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/mountains.jpg"); }
+.home-content .gallery-item:nth-child(2)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/cityscapes.jpg"); }
+.home-content .gallery-item:nth-child(3)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/18-days-voyage.jpg"); }
+.home-content .gallery-item:nth-child(4)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/architecturals.jpg"); }
 @media only screen and (min-width: 48rem) {
   .home-content .features-container {
     grid-template-columns: 68%;
@@ -466,14 +466,14 @@ button {
     .home-content .features-container .feature {
       align-items: normal; } }
 @media only screen and (min-width: 90em) {
-  .home-content .gallery-item:nth-child(1) {
-    background-image: url("../assets/stories/desktop/mountains.jpg"); }
-  .home-content .gallery-item:nth-child(2) {
-    background-image: url("../assets/stories/desktop/cityscapes.jpg"); }
-  .home-content .gallery-item:nth-child(3) {
-    background-image: url("../assets/stories/desktop/18-days-voyage.jpg"); }
-  .home-content .gallery-item:nth-child(4) {
-    background-image: url("../assets/stories/desktop/architecturals.jpg"); } }
+  .home-content .gallery-item:nth-child(1)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/mountains.jpg"); }
+  .home-content .gallery-item:nth-child(2)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/cityscapes.jpg"); }
+  .home-content .gallery-item:nth-child(3)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/18-days-voyage.jpg"); }
+  .home-content .gallery-item:nth-child(4)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/architecturals.jpg"); } }
 
 .stories-content .stories-hero::before {
   content: "";
@@ -493,38 +493,38 @@ button {
     margin-bottom: 3rem; }
     .stories-content .stories-hero .stories-hero__text .hero-details .story-date {
       opacity: 0.7; }
-.stories-content .gallery .gallery-item:nth-child(1) {
-  background-image: url("../assets/stories/mobile/mountains.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(2) {
-  background-image: url("../assets/stories/mobile/cityscapes.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(3) {
-  background-image: url("../assets/stories/mobile/18-days-voyage.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(4) {
-  background-image: url("../assets/stories/mobile/architecturals.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(5) {
-  background-image: url("../assets/stories/mobile/world-tour.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(6) {
-  background-image: url("../assets/stories/mobile/unforeseen-corners.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(7) {
-  background-image: url("../assets/stories/mobile/king-on-africa.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(8) {
-  background-image: url("../assets/stories/mobile/trip-to-nowhere.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(9) {
-  background-image: url("../assets/stories/mobile/rage-of-the-sea.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(10) {
-  background-image: url("../assets/stories/mobile/running-free.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(11) {
-  background-image: url("../assets/stories/mobile/behind-the-waves.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(12) {
-  background-image: url("../assets/stories/mobile/calm-waters.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(13) {
-  background-image: url("../assets/stories/mobile/milky-way.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(14) {
-  background-image: url("../assets/stories/mobile/dark-forest.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(15) {
-  background-image: url("../assets/stories/mobile/somwarpet.jpg"); }
-.stories-content .gallery .gallery-item:nth-child(16) {
-  background-image: url("../assets/stories/mobile/land-of-dreams.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(1)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/mountains.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(2)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/cityscapes.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(3)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/18-days-voyage.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(4)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/architecturals.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(5)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/world-tour.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(6)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/unforeseen-corners.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(7)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/king-on-africa.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(8)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/trip-to-nowhere.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(9)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/rage-of-the-sea.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(10)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/running-free.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(11)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/behind-the-waves.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(12)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/calm-waters.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(13)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/milky-way.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(14)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/dark-forest.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(15)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/somwarpet.jpg"); }
+.stories-content .gallery .gallery-item:nth-child(16)::after {
+  background-image: var(--background-images-gradient), url("../assets/stories/mobile/land-of-dreams.jpg"); }
 @media only screen and (min-width: 48rem) {
   .stories-content .stories-hero {
     display: flex;
@@ -539,38 +539,38 @@ button {
       background-color: transparent; }
       .stories-content .stories-hero .stories-hero__text .default-paragraph {
         width: 39rem; }
-  .stories-content .gallery .gallery-item:nth-child(1) {
-    background-image: url("../assets/stories/desktop/mountains.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(2) {
-    background-image: url("../assets/stories/desktop/cityscapes.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(3) {
-    background-image: url("../assets/stories/desktop/18-days-voyage.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(4) {
-    background-image: url("../assets/stories/desktop/architecturals.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(5) {
-    background-image: url("../assets/stories/desktop/world-tour.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(6) {
-    background-image: url("../assets/stories/desktop/unforeseen-corners.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(7) {
-    background-image: url("../assets/stories/desktop/king-on-africa.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(8) {
-    background-image: url("../assets/stories/desktop/trip-to-nowhere.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(9) {
-    background-image: url("../assets/stories/desktop/rage-of-the-sea.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(10) {
-    background-image: url("../assets/stories/desktop/running-free.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(11) {
-    background-image: url("../assets/stories/desktop/behind-the-waves.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(12) {
-    background-image: url("../assets/stories/desktop/calm-waters.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(13) {
-    background-image: url("../assets/stories/desktop/milky-way.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(14) {
-    background-image: url("../assets/stories/desktop/dark-forest.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(15) {
-    background-image: url("../assets/stories/desktop/somwarpet.jpg"); }
-  .stories-content .gallery .gallery-item:nth-child(16) {
-    background-image: url("../assets/stories/desktop/land-of-dreams.jpg"); } }
+  .stories-content .gallery .gallery-item:nth-child(1)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/mountains.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(2)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/cityscapes.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(3)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/18-days-voyage.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(4)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/architecturals.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(5)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/world-tour.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(6)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/unforeseen-corners.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(7)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/king-on-africa.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(8)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/trip-to-nowhere.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(9)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/rage-of-the-sea.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(10)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/running-free.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(11)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/behind-the-waves.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(12)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/calm-waters.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(13)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/milky-way.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(14)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/dark-forest.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(15)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/somwarpet.jpg"); }
+  .stories-content .gallery .gallery-item:nth-child(16)::after {
+    background-image: var(--background-images-gradient), url("../assets/stories/desktop/land-of-dreams.jpg"); } }
 @media only screen and (min-width: 90em) {
   .stories-content .stories-hero {
     padding: 12rem 11rem;

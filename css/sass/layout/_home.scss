@@ -3,20 +3,20 @@
         font-size: 1.2rem;
     }
 
-    .gallery-item:nth-child(1) {
-        background-image: url('../assets/stories/mobile/mountains.jpg');
+    .gallery-item:nth-child(1)::after {
+        background-image: var(--background-images-gradient), url('../assets/stories/mobile/mountains.jpg');
     }
 
-    .gallery-item:nth-child(2) {
-        background-image: url('../assets/stories/mobile/cityscapes.jpg');
+    .gallery-item:nth-child(2)::after {
+        background-image: var(--background-images-gradient), url('../assets/stories/mobile/cityscapes.jpg');
     }
 
-    .gallery-item:nth-child(3) {
-        background-image: url('../assets/stories/mobile/18-days-voyage.jpg');
+    .gallery-item:nth-child(3)::after {
+        background-image: var(--background-images-gradient), url('../assets/stories/mobile/18-days-voyage.jpg');
     }
 
-    .gallery-item:nth-child(4) {
-        background-image: url('../assets/stories/mobile/architecturals.jpg');
+    .gallery-item:nth-child(4)::after {
+        background-image: var(--background-images-gradient), url('../assets/stories/mobile/architecturals.jpg');
     }
 
     @media only screen and (min-width: $minWidthTabletPortrait) {
@@ -36,20 +36,20 @@
     }
 
     @media only screen and (min-width: $minWidthDesktop) {
-        .gallery-item:nth-child(1) {
-            background-image: url('../assets/stories/desktop/mountains.jpg');
+        .gallery-item:nth-child(1)::after {
+            background-image: var(--background-images-gradient), url('../assets/stories/desktop/mountains.jpg');
         }
 
-        .gallery-item:nth-child(2) {
-            background-image: url('../assets/stories/desktop/cityscapes.jpg');
+        .gallery-item:nth-child(2)::after {
+            background-image: var(--background-images-gradient), url('../assets/stories/desktop/cityscapes.jpg');
         }
 
-        .gallery-item:nth-child(3) {
-            background-image: url('../assets/stories/desktop/18-days-voyage.jpg');
+        .gallery-item:nth-child(3)::after {
+            background-image: var(--background-images-gradient), url('../assets/stories/desktop/18-days-voyage.jpg');
         }
 
-        .gallery-item:nth-child(4) {
-            background-image: url('../assets/stories/desktop/architecturals.jpg');
+        .gallery-item:nth-child(4)::after {
+            background-image: var(--background-images-gradient), url('../assets/stories/desktop/architecturals.jpg');
         }
     }
 }
